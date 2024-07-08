@@ -49,7 +49,7 @@ export const AmountOfWorkDone: FC = () => {
                     <span></span>
                 </div>
                 <div className="amountofworkdone__paragraph">
-                    We have crews out all 4 seasons, and we never take deposits - you won't pay us until the job is complete. If you need a new roof, siding, windows, gutters or trim, there's no better time to call us. Trust Besroi - our strength is in the numbers. Call us today!
+                    We have crews out all 4 seasons, and we never take deposits &ndash; you won&apos;t pay us until the job is complete. If you need a new roof, siding, windows, gutters or trim, there&apos;s no better time to call us. Trust Besroi &ndash; our strength is in the numbers. Call us today!
                 </div>
                 <div className="amountofworkdone__container-quantityworks">
                     <div className="amountofworkdone__quantityworks">
