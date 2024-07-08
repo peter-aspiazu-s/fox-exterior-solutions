@@ -1,0 +1,163 @@
+.headercomponent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 90px;
+    z-index: 1001;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); /* Ajusta la transparencia */
+}
+
+.headercomponent__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0px;
+    width: 80%;
+}
+
+.headercomponent__logo{
+    position: relative;
+    width: 120px;
+    height: 70px;
+
+    user-select: none; /* Evita la selección de texto */
+    outline: none; /* Elimina el borde de enfoque */
+    background-color: transparent; /* Asegura que el fondo sea transparente */
+    -webkit-tap-highlight-color: transparent; /* Elimina el efecto azul en móviles */
+}
+
+.headercomponent__ico-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    user-select: none; /* Evita la selección de texto */
+    outline: none; /* Elimina el borde de enfoque */
+    background-color: transparent; /* Asegura que el fondo sea transparente */
+    -webkit-tap-highlight-color: transparent; /* Elimina el efecto azul en móviles */
+}
+
+.headercomponent__menu-items {
+    display: none;
+}
+
+.headercomponent__hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px; /* Ajusta la altura total del icono */
+}
+
+.headercomponent__ico-menu.open .headercomponent__hamburger-menu {
+    transform: rotate(45deg); /* Rota el contenedor */
+    transition: transform .3s;
+}
+
+.headercomponent__hamburger-menu span {
+    display: block;
+    height: 5px; /* Grosor de cada barra */
+    width: 100%; /* Ancho de cada barra */
+    background-color: #eeeeee; /* Color de las barras */
+    border-radius: 2px; /* Esquinas redondeadas */
+    transform: rotate(0deg);
+    transition: transform .3s;
+}
+
+.headercomponent__hamburger-menu span.open:nth-child(1) {
+    transform: translateY(6px) rotate(5deg); /* Transforma la primera barra */
+    transition: transform .3s;
+}
+
+.headercomponent__hamburger-menu span.open:nth-child(2) {
+    opacity: 0; /* Oculta la barra del medio */
+    transition: opacity .3s;
+}
+
+.headercomponent__hamburger-menu span.open:nth-child(3) {
+    transform: translateY(-14px) rotate(-95deg); /* Transforma la última barra */
+    transition: transform .3s;
+}
+
+.headercomponent__getaquote{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px){
+    .headercomponent{
+        height: 80px;
+        align-items: flex-end;
+    }
+
+    .headercomponent__logo{
+        width: 150px;
+        height: 100px;
+    }
+
+    .headercomponent__container{
+        padding: 15px 0px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .headercomponent__container{
+        padding: 5px 0px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .headercomponent__container{
+        justify-content: flex-start;
+        width: 1100px;
+    }
+
+    .headercomponent__ico-menu{
+        display: none;
+    }
+
+    .headercomponent__menu-items {
+        display: flex;
+        gap: 20px;
+    }
+
+    .headercomponent__menu-items-link{
+        text-decoration: none;
+        color: #eeeeee;
+        font-weight: bold;
+    }
+
+    .headercomponent__getaquote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        /* background-color: #1c60a9; */
+        background-color: #ef7e3a;
+        color: #eeeeee;
+        font-weight: bold;
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+    }
+
+    .headercomponent__getaquote span {
+        font-size: 10px; /* Ajusta el tamaño de la fuente */
+        vertical-align: middle; /* Opcional: ajusta la alineación vertical */
+        font-weight: bold;
+        border: 2px solid #eeeeee;
+        border-radius: 30px;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #eeeeee;
+    }
+}
