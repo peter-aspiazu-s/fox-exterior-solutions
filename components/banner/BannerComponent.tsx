@@ -4,15 +4,16 @@ import { FC } from "react";
 interface BannerProps {
     image: string;
     text: string;
+    onButtonClick: () => void; // Prop para manejar el click
 }
 
-export const BannerComponent:FC<BannerProps> = ({image, text}) => {
+export const BannerComponent:FC<BannerProps> = ({image, text, onButtonClick}) => {
     
     return (
         <div 
             className="bannercomponent"
             style={{
-                background: image
+                backgroundImage: image
             }}
         >
             <div className="bannercomponent__backgroundblack"></div>
@@ -22,12 +23,12 @@ export const BannerComponent:FC<BannerProps> = ({image, text}) => {
                     <span></span>
                 </div>
                 <div className="bannercomponent__buttons">
-                    <Link href="/" className="bannercomponent__button">
+                    <button onClick={onButtonClick} className="bannercomponent__button">
                         RESIDENTIAL SERVICES <span>&gt;</span>
-                    </Link>
-                    <Link href="/" className="bannercomponent__button">
+                    </button>
+                    <button onClick={onButtonClick} className="bannercomponent__button">
                         COMMERCIAL SERVICES <span>&gt;</span>
-                    </Link>
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
-import { FC, ReactNode, useState } from "react";
+import { FC, ReactNode, useRef, useState } from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { InfoContactTop } from "@/components/infocontactop/InfoContactTop";
 import { HeaderComponent } from "@/components/header/HeaderComponent";
 import { Sidebar } from '../components/header/Sidebar';
@@ -9,7 +10,6 @@ import { CopyWrite } from "@/components/footer/CopyWrite";
 import { BannerComponent } from "@/components/banner/BannerComponent";
 import { AmountOfWorkDone } from "@/components/amount/AmountOfWorkDone";
 import { SectionServices } from "@/components/section/SectionServices";
-import { useRouter } from "next/router";
 
 
 interface LayoutProps {
@@ -28,12 +28,18 @@ export const Layout: FC<LayoutProps> = ({
 
     const router = useRouter();
     const [menuOpen, setMenuOpen] = useState(false);
+    const sectionServicesRef = useRef<HTMLDivElement>(null);
 
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const scrollToSection = () => {
+        if (sectionServicesRef.current) {
+            sectionServicesRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <>
@@ -52,22 +58,26 @@ export const Layout: FC<LayoutProps> = ({
 
             <BannerComponent 
                 image={
-                    (router.asPath.split("/")[2] === "windows-doors") ? "url(/images/windows-doors.webp)" 
+                    (router.asPath.split("/")[2] === "windows") ? "url(/images/windows-doors.webp)" 
                     : (router.asPath.split("/")[2] === "roofing") ? "url(/images/roofing.webp)"
                     : (router.asPath.split("/")[2] === "siding") ? "url(/images/siding.webp)"
-                    : (router.asPath.split("/")[2] === "decks") ? "url(/images/decks.webp)"
-                    : (router.asPath.split("/")[2] === "trim-gutters") ? "url(/images/trim-gutters.webp)"
+                    // : (router.asPath.split("/")[2] === "decks") ? "url(/images/decks.webp)"
+                    : (router.asPath.split("/")[2] === "gutters") ? "url(/images/trim-gutters.webp)"
                     : "url(/images/bannerhome.gif)"
                 } 
                 
                 text={
-                    (router.asPath.split("/")[2] === "windows-doors") ? "Windows & Doors Services" 
+                    (router.asPath.split("/")[2] === "windows") ? "Windows Services" 
                     : (router.asPath.split("/")[2] === "roofing") ? "Roofing Services"
                     : (router.asPath.split("/")[2] === "siding") ? "Siding Services"
-                    : (router.asPath.split("/")[2] === "decks") ? "Decks Services"
-                    : (router.asPath.split("/")[2] === "trim-gutters") ? "Trim & Gutters Services"
-                    : "Three Generations Of Roofing & Siding Experience"
-                } />
+                    // : (router.asPath.split("/")[2] === "decks") ? "Decks Services"
+                    : (router.asPath.split("/")[2] === "gutters") ? "Gutters Services"
+                    : (router.asPath.split("/")[1] === "contact") ? "Contact"
+                    : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
+                } 
+                
+                onButtonClick={scrollToSection} // Pasar la función al BannerComponent
+            />
 
             {
                 children
@@ -75,7 +85,9 @@ export const Layout: FC<LayoutProps> = ({
 
             <AmountOfWorkDone />
 
-            <SectionServices />
+            <div ref={sectionServicesRef}>
+                <SectionServices />
+            </div>
 
             <CallToActionFooter />
 

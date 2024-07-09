@@ -20,6 +20,12 @@
 
 /* HOME */
 @import url(components/sectioninfoservices.css);
+@import url(components/misionvision.css);
 
 /* ROOFING */
 @import url(components/infoservices.css);
+
+/* CONTACT */
+@import url(components/contactcomponent.css);
+@import url(components/formcomponent.css);
+@import url(components/mapcomponents.css);

@@ -9,7 +9,10 @@ function DecksPage () {
             description="Decks Services"
             keywords="Decks"
         >
-            <InfoServices image={"/images/Decks.webp"} alt="Decks image" />
+            {/* <InfoServices  image={"/images/Decks.webp"} alt="Decks image" /> */}
+            <div>
+                
+            </div>
         </Layout>
     )
 }

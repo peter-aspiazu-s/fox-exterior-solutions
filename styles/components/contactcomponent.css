@@ -1,0 +1,65 @@
+.contactcomponent{
+    width: 100%;
+    background-color: #eeeeee;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contactcomponent__container{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contactcomponent__text{
+    text-align: center;
+    color: #333333;
+}
+
+.contactcomponent__formmap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (min-width: 375px){
+    .contactcomponent__container{
+        width: 340px;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .contactcomponent__container{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .contactcomponent__container{
+        width: 700px;
+    }
+
+    .contactcomponent__formmap{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contactcomponent__container{
+        width: 920px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .contactcomponent__container{
+        width: 1200px;
+    }
+}

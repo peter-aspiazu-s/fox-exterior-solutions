@@ -1,0 +1,47 @@
+.mapcomponent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.mapcomponent__map{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mapcomponent__title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mapcomponent__link{
+    color: #ef7e3a;
+}
+
+.mapcomponent__map iframe{
+    width: 100% !important;
+    border: 0;
+}
+
+
+@media screen and (min-width: 768px){
+    .mapcomponent{
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .mapcomponent{
+        width: 440px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .mapcomponent{
+        width: 580px;
+    }
+}

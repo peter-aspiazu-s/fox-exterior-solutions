@@ -29,15 +29,18 @@ export const FooterComponent: FC = () => {
 
                 <div className="footercomponent__section">
                     <div className="footercomponent__title">Commercial Services</div>
-                    <Link 
+                    {/* <Link 
                         href="/service/roofing" 
-                        className="footercomponent__link">Roofing</Link>
+                        className="footercomponent__link">Flat Root</Link> */}
                     <Link 
                         href="/service/siding"
                         className="footercomponent__link">Siding</Link>
                     <Link 
-                        href="/service/windows&doors"
-                        className="footercomponent__link">Windows & Doors</Link>
+                        href="/service/windows"
+                        className="footercomponent__link">Windows</Link>
+                    <Link 
+                        href="/service/gutters"
+                        className="footercomponent__link">Gutters</Link>
                 </div>
 
                 <div className="footercomponent__section">
@@ -45,29 +48,17 @@ export const FooterComponent: FC = () => {
                     <Link 
                         href="/service/roofing"
                         className="footercomponent__link">Roofing</Link>
-                    <Link 
-                        href="/service/siding"
-                        className="footercomponent__link">Siding</Link>
-                    <Link 
-                        href="/service/decking"
-                        className="footercomponent__link">Decking</Link>
-                    <Link 
-                        href="/service/trim&gutters"
-                        className="footercomponent__link">Trim & Gutters</Link>
-                    <Link 
-                        href="/service/windows&doors"
-                        className="footercomponent__link">Windows & Doors</Link>
                 </div>
 
                 <div className="footercomponent__section">
                     <div className="footercomponent__logo">
                         <Image src="/images/logo.svg" alt="Logo Fox Exterior Solutions" layout="fill" />
                     </div>
-                    <div className="footercomponent__paragraph">A third generation expert roofing and siding company servicing the Buffalo and Rochester areas.</div>
+                    <div className="footercomponent__paragraph">At Fox Exterior Solutions, we specialize in asphalt shingle roofing. As your trusted contractor, our experienced team is dedicated to delivering high-quality asphalt shingle roofing services backed by years of expertise in the industry.</div>
                 </div>
 
                 <div className="footercomponent__socialnetwork">
-                    <a className="footercomponent__icon-socialnetwork">
+                    <a href="https://www.facebook.com/MJRofingWYN" target="_blank" className="footercomponent__icon-socialnetwork">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M48 24C48 10.7438 37.2562 0 24 0C10.7438 0 0 10.7438 0 24C0 35.9813 8.775 45.9094 20.25 47.7094V30.9375H14.1562V24H20.25V18.7125C20.25 12.6984 23.8313 9.375 29.3156 9.375C31.9406 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6594C28.6781 15.75 27.75 17.6016 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7094C39.225 45.9094 48 35.9813 48 24Z" 
                                 fill="#eeeeee"/>
@@ -75,7 +66,7 @@ export const FooterComponent: FC = () => {
                                 fill="#333333"/>
                         </svg>   
                     </a>
-                    <a className="footercomponent__icon-socialnetwork">
+                    <a href="https://www.instagram.com/foxexteriosolutions/" target="_blank" className="footercomponent__icon-socialnetwork">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM24.0012 11.2C20.5249 11.2 20.0886 11.2152 18.7233 11.2773C17.3606 11.3397 16.4305 11.5555 15.6166 11.872C14.7747 12.1989 14.0606 12.6363 13.3491 13.348C12.6371 14.0595 12.1997 14.7736 11.8717 15.6152C11.5544 16.4294 11.3384 17.3598 11.2771 18.7219C11.216 20.0873 11.2 20.5238 11.2 24.0001C11.2 27.4764 11.2155 27.9114 11.2773 29.2767C11.34 30.6394 11.5557 31.5695 11.872 32.3834C12.1992 33.2253 12.6365 33.9394 13.3483 34.6509C14.0595 35.3629 14.7736 35.8013 15.615 36.1283C16.4294 36.4448 17.3598 36.6605 18.7222 36.7229C20.0876 36.7851 20.5236 36.8003 23.9996 36.8003C27.4762 36.8003 27.9111 36.7851 29.2765 36.7229C30.6391 36.6605 31.5703 36.4448 32.3848 36.1283C33.2264 35.8013 33.9394 35.3629 34.6506 34.6509C35.3626 33.9394 35.8 33.2253 36.128 32.3837C36.4427 31.5695 36.6587 30.6391 36.7227 29.277C36.784 27.9116 36.8 27.4764 36.8 24.0001C36.8 20.5238 36.784 20.0876 36.7227 18.7222C36.6587 17.3595 36.4427 16.4294 36.128 15.6155C35.8 14.7736 35.3626 14.0595 34.6506 13.348C33.9386 12.636 33.2266 12.1987 32.384 11.872C31.5679 11.5555 30.6373 11.3397 29.2746 11.2773C27.9092 11.2152 27.4746 11.2 23.9972 11.2H24.0012Z" 
                                 fill="#eeeeee"/>
@@ -85,7 +76,7 @@ export const FooterComponent: FC = () => {
                                 fill="#333333"/>
                         </svg>
                     </a>
-                    <a className="footercomponent__icon-socialnetwork">
+                    {/* <a href="#" className="footercomponent__icon-socialnetwork">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
                             style={{
                                 background: "radial-gradient(circle, #333333 20%, #eeeeee 80%)",
@@ -97,16 +88,16 @@ export const FooterComponent: FC = () => {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 28.8V20.8L28 24.8001L21.6 28.8Z" 
                                 fill="#eeeeee"/>
                         </svg>
-                    </a>
+                    </a> */}
                 </div>
 
                 <div className="footercomponent__section">
                     <Link href="/contact" className="footercomponent__button">
                         LEAVEA BUFFALO REVIEW <span>&gt;</span>
                     </Link>
-                    <Link href="/contact" className="footercomponent__button">
+                    {/* <Link href="/contact" className="footercomponent__button">
                         LEAVE A ROCHESTER REVIEW <span>&gt;</span>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>

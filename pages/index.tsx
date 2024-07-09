@@ -1,5 +1,6 @@
 import { Layout } from "@/layout/Layout";
 import { SectionInfoServices } from "@/components/home/SectionInfoServices";
+import { MisionVision } from "@/components/home/MisionVision";
 
 
 function HomePage() {
@@ -12,6 +13,8 @@ function HomePage() {
       <div>
 
         <SectionInfoServices />
+
+        <MisionVision />
 
       </div>
     </Layout>

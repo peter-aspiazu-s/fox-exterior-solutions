@@ -8,7 +8,7 @@ export const CallToActionFooter: FC = () => {
             <div className="calltoactionfooter__backgroundblack"></div>
             <div className="calltoactionfooter__container">
                 <div className="calltoactionfooter__title">Ready To Get Started?</div>
-                <div className="calltoactionfooter__text">Our expert team can help with the planning, material choices, and professional installation for your home improvement project. We offer free estimates and require no money down!</div>
+                <div className="calltoactionfooter__text">Our experienced professionals are happy to meet with you at your convenience to provide you with a free, no-obligation quote and answer any questions you may have about roof repair or installation</div>
                 <Link href="/contact" className="sidebar__getaquote">
                     GET A QUOTE <span>&gt;</span>
                 </Link>

@@ -1,4 +1,5 @@
-import { Dispatch, FC, SetStateAction, useState } from "react";
+import { Dispatch, FC, SetStateAction } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import { headerComponentData } from "@/data/layout/headercomponent";
@@ -15,7 +16,8 @@ export const HeaderComponent: FC<headerComponentProps> = ({
     menuOpen
 }) => {
 
-    
+    const router = useRouter();
+    console.log(router.asPath);
     
     return (
         <div className="headercomponent">
@@ -39,7 +41,23 @@ export const HeaderComponent: FC<headerComponentProps> = ({
                 </div>
                 <div className="headercomponent__menu-items">
                     {headerComponentData.map((data) => (
-                        <Link href={data.redirect} key={data.redirect} className="headercomponent__menu-items-link">{data.name.toLocaleUpperCase()}</Link>
+                        <div className="headercomponent__menu" key={data.redirect} >
+                            <Link 
+                                href={data.redirect} 
+                                className={
+                                    `headercomponent__menu-items-link
+                                    ${(router.asPath === data.redirect) ? "animation-menu" : ""}`
+                                }
+                            >{data.name.toLocaleUpperCase()}</Link>
+
+                            <div className="headercomponent__submenu">
+                                {
+                                    data.subService?.map((submenu) => (
+                                        <Link href={submenu.redirect} key={submenu.redirect}>{submenu.name}</Link>
+                                    ))
+                                }
+                            </div>
+                        </div>
                     ))}
                 </div>
                 <Link href="/contact" className="headercomponent__getaquote">

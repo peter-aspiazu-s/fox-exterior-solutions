@@ -1,0 +1,131 @@
+.misionvision{
+    background-color: #ef7e3a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.misionvision__container{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.misionvision__our{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.misionvision__title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.misionvision__text{
+    text-align: center;
+    color: #eeeeee;
+}
+
+.misionvision__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.misionvision__block{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.misionvision__icon{
+    border: 2px solid #eeeeee;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.misionvision__icon svg{
+    width: 15px;
+    fill: #eeeeee;
+}
+
+.misionvision__block-title{
+    text-align: center;
+    font-size: 20px;
+    color: #eeeeee;
+}
+
+.misionvision__block-text{
+    text-align: center;
+    color: #eeeeee;
+}
+
+@media screen and (min-width: 375px){
+    .misionvision__container{
+        width: 340px;
+    }
+
+    .misionvision__block{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .misionvision__container{
+        width: 370px;
+    }
+
+    .misionvision__block{
+        width: 170px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .misionvision__container{
+        width: 700px;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .misionvision__container{
+        width: 920px;
+    }
+
+    .misionvision__our{
+        width: 400px;
+    }
+
+    .misionvision__title{
+        font-size: 40px;
+    }
+
+    .misionvision__block{
+        width: 230px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .misionvision__container{
+        width: 1200px;
+    }
+
+    .misionvision__our{
+        width: 500px;
+    }
+
+    .misionvision__block{
+        width: 250px;
+    }
+}

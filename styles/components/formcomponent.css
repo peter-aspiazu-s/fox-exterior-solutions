@@ -1,0 +1,102 @@
+.formcomponent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formcomponent__title{
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.formcomponent__text{
+    text-align: center;
+    color: #333333;
+}
+
+.formcomponent__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formcomponent__label{
+    font-size: 20px;
+    color: #333333;
+}
+
+.formcomponent__input{
+    border: 0;
+    border-bottom: 1px solid #333333;
+    background-color: #e0e0e0;
+    height: 40px;
+}
+
+.formcomponent__textarea{
+    border: 0;
+    border-bottom: 1px solid #333333;
+    background-color: #e0e0e0;
+    height: 100px;
+}
+
+.formcomponent__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #ef7e3a;
+    color: #eeeeee;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.formcomponent__button:hover{
+    background-color: #1e5ca7;
+    color: #ef7e3a;
+    transition: all .3s;
+}
+
+.formcomponent__button span{
+    font-size: 10px; /* Ajusta el tamaño de la fuente */
+    vertical-align: middle; /* Opcional: ajusta la alineación vertical */
+    font-weight: bold;
+    border: 2px solid #eeeeee;
+    border-radius: 30px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeeeee;
+}
+
+.formcomponent__button:hover span {
+    border: 2px solid #ef7e3a;
+    color: #ef7e3a;
+    transform: translateX(8px);
+    transition: all .3s;
+}
+
+@media screen and (min-width: 768px){
+    .formcomponent{
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .formcomponent{
+        width: 440px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .formcomponent{
+        width: 580px;
+    }
+}

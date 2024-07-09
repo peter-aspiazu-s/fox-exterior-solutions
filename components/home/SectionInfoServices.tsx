@@ -5,10 +5,10 @@ export const SectionInfoServices: FC = () => {
     return(
         <div className="sectioninfoservices">
             <div className="sectioninfoservices__container">
-                <div className="sectioninfoservices__title">Providing Buffalo & Rochester With Expert Roofing, Siding, Gutters, Windows & Doors Service Since 1960</div>
+                <div className="sectioninfoservices__title">Providing Buffalo With Expert Roofing, Siding, Gutters & Windows Service</div>
                 <div className="sectioninfoservices__container-text">
-                    <div className="sectioninfoservices__text">A top-quality build comes down to three things: experience, superior-grade materials, and craftsmanship with an eye for detail.</div>
-                    <div className="sectioninfoservices__text">At Besroi Roofing & Siding we embody those aspects to deliver the best construction services throughout Western, NY. Since 1960, we have been family-owned and operated, tailoring our services including roofing, siding, gutter, window, and door installations and repairs to homeowners. We help our neighbors by price matching and comparing costs for any of the products that we use. Bottom line our buying power allows us to deliver great services using the best products at fair prices.</div>
+                    <div className="sectioninfoservices__text">At Fox Exterior Solutions, we specialize in asphalt shingle roofing.</div>
+                    <div className="sectioninfoservices__text">As your trusted contractor, our experienced team is dedicated to delivering high-quality asphalt shingle roofing services backed by years of expertise in the industry. If you&apos;re currently looking for Buffalo roofers or roofing companies near western upstate New York, Fox Exterior Solutions is here to help. Our experienced professionals are happy to meet with you at your convenience to provide you with a free, no-obligation quote and answer any questions you may have about roof repair or installation.</div>
                 </div>
             </div>
         </div>
