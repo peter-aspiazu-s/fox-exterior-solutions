@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction } from "react";
+import { Dispatch, FC, SetStateAction, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +17,6 @@ export const HeaderComponent: FC<headerComponentProps> = ({
 }) => {
 
     const router = useRouter();
-    console.log(router.asPath);
     
     return (
         <div className="headercomponent">
@@ -50,13 +49,26 @@ export const HeaderComponent: FC<headerComponentProps> = ({
                                 }
                             >{data.name.toLocaleUpperCase()}</Link>
 
-                            <div className="headercomponent__submenu">
-                                {
-                                    data.subService?.map((submenu) => (
-                                        <Link href={submenu.redirect} key={submenu.redirect}>{submenu.name}</Link>
-                                    ))
-                                }
-                            </div>
+                            {/* {
+                                data.subService && <svg onClick={() => setSubmenu(!submenu)} 
+                                xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                className={submenu ? "ico-rotate" : "ico-norotate"}
+                                >
+                                    <path d="M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" transform="translate(0 1)" />
+                                </svg>
+                            } */}
+
+                            {data.subService && (
+                                <div className="headercomponent__submenu">
+                                    {data.subService.map((submenu) => (
+                                        <Link href={submenu.redirect} key={submenu.redirect}
+                                            className="headercomponent__submenu-link"
+                                        >
+                                            {submenu.name}
+                                        </Link>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

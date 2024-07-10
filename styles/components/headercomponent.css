@@ -136,11 +136,12 @@
     }
 
     .headercomponent__menu-items-link{
+        /* border: 1px solid red; */
+        padding-bottom: 45px;
         position: relative;
         text-decoration: none;
         color: #eeeeee;
         font-weight: bold;
-
         transition: color 0.3s; /* Transición para el color */
     }
 
@@ -166,18 +167,42 @@
         color: #ef7e3a; /* Cambia a un color de texto que prefieras en hover */
     }
 
-    .headercomponent__menu-items-link:hover {
-        color: #ef7e3a; /* Cambia a un color de texto que prefieras en hover */
-    }
-
     .animation-menu{
         color: #ef7e3a;
     }
 
-    /* HACER LO MISMO QUE EN EL SIDEBAR, USAR UN ESTADO PARA MOSTRAR O NO EL SUBMENU */
     .headercomponent__submenu {
         display: none;
         position: absolute;
+        top: 68px;
+        left: 0;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .headercomponent__menu:hover .headercomponent__submenu {
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .headercomponent__submenu-link{
+        width: 160px;
+        text-align: center;
+        text-decoration: none;
+        color: #333333;
+        font-weight: bold;
+    }
+    
+    .headercomponent__submenu-link:hover{
+        color: #ef7e3a;
+        transition: all .3s;
     }
 
     .headercomponent__getaquote {
