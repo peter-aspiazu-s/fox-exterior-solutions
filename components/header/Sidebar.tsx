@@ -10,7 +10,16 @@ interface sidebarProps {
 export const Sidebar: FC<sidebarProps> = ({menuOpen, toggleMenu}) => {
 
 
-    const [submenu, setSubmenu] = useState(false);
+    // const [submenu, setSubmenu] = useState(false);
+
+    const [openSubmenus, setOpenSubmenus] = useState<{ [key: string]: boolean }>({});
+
+    const handleSubmenuToggle = (key: string) => {
+        setOpenSubmenus(prevState => ({
+            ...prevState,
+            [key]: !prevState[key]
+        }));
+    };
 
     if(!menuOpen){
         return<></>;
@@ -32,15 +41,15 @@ export const Sidebar: FC<sidebarProps> = ({menuOpen, toggleMenu}) => {
                                     {data.name}
                                 </Link>
                                 {
-                                    data.subService && <svg onClick={() => setSubmenu(!submenu)} 
+                                    data.subService && <svg onClick={() => handleSubmenuToggle(data.redirect)} 
                                     xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
-                                    className={submenu ? "ico-rotate" : "ico-norotate"}
+                                    className={openSubmenus[data.redirect] ? "ico-rotate" : "ico-norotate"}
                                     >
                                     <path d="M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" transform="translate(0 1)" />
                                 </svg>
                                 }
                             </div>
-                            <div className={`sidebar__submenu ${submenu ? "submenu-visible" : "submenu-unvisible"}`}>
+                            <div className={`sidebar__submenu ${openSubmenus[data.redirect] ? "submenu-visible" : "submenu-unvisible"}`}>
                                 {
                                     data.subService?.map((submenu) => (
                                         <Link 

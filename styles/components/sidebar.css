@@ -52,14 +52,8 @@
     border-bottom: 1px solid #dadada;
 }
 
-.submenu-visible{
-    display: flex;
-}
-.submenu-unvisible{
-    display: none;
-}
-
 .sidebar__submenu{
+    display: none;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -67,6 +61,16 @@
     /* gap: 20px; */
     background-color: #e0e0e0;
 }
+
+.submenu-visible{
+    display: flex;
+}
+
+.submenu-unvisible{
+    display: none;
+}
+
+
 .sidebar__submenu-link{
     width: 100%;
     height: 50px;

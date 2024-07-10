@@ -32,22 +32,22 @@ export const FooterComponent: FC = () => {
                     {/* <Link 
                         href="/service/roofing" 
                         className="footercomponent__link">Flat Root</Link> */}
-                    <Link 
-                        href="/service/siding"
-                        className="footercomponent__link">Siding</Link>
-                    <Link 
-                        href="/service/windows"
-                        className="footercomponent__link">Windows</Link>
-                    <Link 
-                        href="/service/gutters"
-                        className="footercomponent__link">Gutters</Link>
+                    <Link href="/service/roofing/flat-low-slope-roof-styles" className="footercomponent__link">Flat/Low Slope Roof Styles</Link>
+                    <Link href="/service/siding-windows" className="footercomponent__link">Siding & Windows</Link>
+                    <Link href="/service/siding/vinyl-siding" className="footercomponent__link">Vinyl Siding</Link>
+                    <Link href="/service/siding/metal-siding" className="footercomponent__link">Metal Siding</Link>
+                    <Link href="/service/siding/hardie-board-siding" className="footercomponent__link">Hardie Board Siding</Link>
+                    <Link href="/service/gutters" className="footercomponent__link">Gutters</Link>
+                    <Link href="/service/gutters/gutters-repairs" className="footercomponent__link">Gutters Repairs</Link>
+                    <Link href="/service/gutters/aluminium-gutters" className="footercomponent__link">Aluminium Gutters</Link>
                 </div>
 
                 <div className="footercomponent__section">
                     <div className="footercomponent__title">Residential Services</div>
-                    <Link 
-                        href="/service/roofing"
-                        className="footercomponent__link">Roofing</Link>
+                    <Link href="/service/roofing" className="footercomponent__link">Roofing</Link>
+                    <Link href="/service/roofing/metal-roofs" className="footercomponent__link">Metal Roofs</Link>
+                    <Link href="/service/roofing/asphalt-singles" className="footercomponent__link">Asphalt Singles</Link>
+                    <Link href="/service/roofing/solar-shingles" className="footercomponent__link">Solar Shingles</Link>
                 </div>
 
                 <div className="footercomponent__section">

@@ -30,6 +30,8 @@ export const Layout: FC<LayoutProps> = ({
     const [menuOpen, setMenuOpen] = useState(false);
     const sectionServicesRef = useRef<HTMLDivElement>(null);
 
+    const pathArray = router.asPath.split("/");
+    const lastElement = pathArray[pathArray.length - 1];
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -58,18 +60,20 @@ export const Layout: FC<LayoutProps> = ({
 
             <BannerComponent 
                 image={
-                    (router.asPath.split("/")[2] === "windows") ? "url(/images/windows-doors.webp)" 
-                    : (router.asPath.split("/")[2] === "roofing") ? "url(/images/roofing.webp)"
-                    : (router.asPath.split("/")[2] === "siding") ? "url(/images/siding.webp)"
+                    (lastElement === "siding-windows") ? "url(/images/siding.webp)" 
+                    : (lastElement === "roofing") ? "url(/images/roofing.webp)"
+                    : (lastElement === "metal-roofs") ? "url(/images/roofing2.jpg)"
+                    : (lastElement === "asphalt-singles") ? "url(/images/roofing3.jpg)"
+                    : (lastElement === "solar-shingles") ? "url(/images/roofing4.jpg)"
+                    : (lastElement === "flat-low-slope-roof-styles") ? "url(/images/roofing5.jpg)"
                     // : (router.asPath.split("/")[2] === "decks") ? "url(/images/decks.webp)"
-                    : (router.asPath.split("/")[2] === "gutters") ? "url(/images/trim-gutters.webp)"
+                    : (lastElement === "gutters") ? "url(/images/trim-gutters.webp)"
                     : "url(/images/bannerhome.gif)"
                 } 
                 
                 text={
-                    (router.asPath.split("/")[2] === "windows") ? "Windows Services" 
+                    (router.asPath.split("/")[2] === "siding-windows") ? "Siding & Windows Services" 
                     : (router.asPath.split("/")[2] === "roofing") ? "Roofing Services"
-                    : (router.asPath.split("/")[2] === "siding") ? "Siding Services"
                     // : (router.asPath.split("/")[2] === "decks") ? "Decks Services"
                     : (router.asPath.split("/")[2] === "gutters") ? "Gutters Services"
                     : (router.asPath.split("/")[1] === "contact") ? "Contact"
