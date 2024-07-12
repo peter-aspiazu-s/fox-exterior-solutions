@@ -10,8 +10,10 @@ function HardieBoardSidingPage () {
             keywords="Siding"
         >
             <InfoServices image={"/images/siding.webp"} alt="siding image" 
-                title="Professional Siding Company For Quality Services"
-                description="Siding is not just about protection, it's also about aesthetics. At Fox Exterior Solutions, we understand the importance of having siding that not only shields your property from the elements but also enhances its curb appeal. Whether you're seeking to replace outdated siding or want to upgrade the look of your home, our siding installation and replacement services are tailored to your unique preferences."
+                title="Hardie Board Siding"
+                description="Durable and resistant to rot and pests, Hardie plank siding offers the appearance of wood without all the maintenance, making it a popular choice for a timeless look."
+                text1="Instalación de revestimiento Hardie Board que combina durabilidad y estética de madera"
+                text2="Soluciones de revestimiento resistentes a plagas y putrefacción para una belleza duradera"
             />
         </Layout>
     )

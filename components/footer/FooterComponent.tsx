@@ -91,14 +91,11 @@ export const FooterComponent: FC = () => {
                     </a> */}
                 </div>
 
-                <div className="footercomponent__section">
+                {/* <div className="footercomponent__section">
                     <Link href="/contact" className="footercomponent__button">
                         LEAVEA BUFFALO REVIEW <span>&gt;</span>
                     </Link>
-                    {/* <Link href="/contact" className="footercomponent__button">
-                        LEAVE A ROCHESTER REVIEW <span>&gt;</span>
-                    </Link> */}
-                </div>
+                </div> */}
             </div>
         </div>
     )

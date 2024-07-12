@@ -25,6 +25,10 @@
     color: #333333;
 }
 
+.formcomponent__textclass{
+    color: #eeeeee !important;
+}
+
 .formcomponent__input{
     border: 0;
     border-bottom: 1px solid #333333;

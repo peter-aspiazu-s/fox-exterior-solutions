@@ -1,50 +1,24 @@
-import Link from "next/link"
-import { PaperIcon } from "./PaperIcon"
-import { CreditCardIcon } from './CreditCardIcon';
-import { CalendarIcon } from './CalendarIcon';
-import { CheckIcon } from './CheckIcon';
+import Link from "next/link";
 
 export const MisionVision = () => {
 
     return (
         <div className="misionvision">
             <div className="misionvision__container">
-                <div className="misionvision__our">
-                    <div className="misionvision__title">Our Vision & Mission</div>
-                    <div className="misionvision__text">At Fox Exterior Solutions, we specialize in asphalt shingle roofing. As your trusted contractor, our experienced team is dedicated to delivering high-quality asphalt shingle roofing services backed by years of expertise in the industry.</div>
+                <div className="misionvision__our-text">
+                    <div className="misionvision__our-container">
+                        <div className="misionvision__title">Mission</div>
+                        <div className="misionvision__text">At Fox Exterior Solutions, we offer complete roofing and exterior solutions for residential and commercial properties in Buffalo and Western New York. We specialize in asphalt shingle roofs, metal roofs, solar roofs, low-slope commercial roofs, and EPDM and TPO roofs. Additionally, we provide siding, window, gutter, and roof maintenance and inspection services. Our team is committed to delivering high-quality services that guarantee the protection, energy efficiency and aesthetics of each property.</div>
+                    </div>
+                    <div className="misionvision__our-container">
+                        <div className="misionvision__title">Vision</div>
+                        <div className="misionvision__text">Our vision is to be the leading roofing and exterior solutions company in Western New York, recognized for our innovation, quality and commitment to sustainability. We aim to continually improve our services by adopting advanced technologies and sustainable practices, to offer solutions that not only protect and beautify properties, but also increase their energy efficiency and durability. We want to be our clients&apos; first choice by offering exceptional service and building lasting relationships based on trust and excellence.</div>
+                    </div>
+                </div>
+                <div className="misionvision__our-button">
                     <Link href="/" className="bannercomponent__button">
                         GET A QUOTA <span>&gt;</span>
                     </Link>
-                </div>
-                <div className="misionvision__items">
-                    <div className="misionvision__block">
-                        <div className="misionvision__icon">
-                            <PaperIcon />
-                        </div>
-                        <div className="misionvision__block-title">Free Consultation</div>
-                        <div className="misionvision__block-text">It&apos;s important to understand your specific needs so we can guide you to the best materials for an efficient and cost-effective project.</div>
-                    </div>
-                    <div className="misionvision__block">
-                        <div className="misionvision__icon">
-                            <CreditCardIcon />
-                        </div>
-                        <div className="misionvision__block-title">No Deposit Required</div>
-                        <div className="misionvision__block-text">We won&apos;t get paid until your job is done, so you can trust us to do it well. That philosophy has worked for over 65 years.</div>
-                    </div>
-                    <div className="misionvision__block">
-                        <div className="misionvision__icon">
-                            <CalendarIcon />
-                        </div>
-                        <div className="misionvision__block-title">4 Season of Service</div>
-                        <div className="misionvision__block-text">We have crews out all 4 seasons. If you need a new roof, siding, windows, gutters or trim, there&apos;s no better time to call us whether you have an installation or repair need.</div>
-                    </div>
-                    <div className="misionvision__block">
-                        <div className="misionvision__icon">
-                            <CheckIcon />
-                        </div>
-                        <div className="misionvision__block-title">Satisfaction Gaurantee</div>
-                        <div className="misionvision__block-text">Your project&apos;s success is our priority. We strive for a clean job site, precise installation, and post-installation adjustments or repairs to get thigns right.</div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -12,6 +12,8 @@ function SidingPage () {
             <InfoServices image={"/images/siding.webp"} alt="siding image" 
                 title="Professional Siding Company For Quality Services"
                 description="Siding is not just about protection, it's also about aesthetics. At Fox Exterior Solutions, we understand the importance of having siding that not only shields your property from the elements but also enhances its curb appeal. Whether you're seeking to replace outdated siding or want to upgrade the look of your home, our siding installation and replacement services are tailored to your unique preferences."
+                text1="Installation of coatings that improve the appearance and durability of your home"
+                text2="Replacing old coatings for a modern and efficient renovation"
             />
         </Layout>
     )

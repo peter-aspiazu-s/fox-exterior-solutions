@@ -10,8 +10,10 @@ function VinylSidingPage () {
             keywords="Siding"
         >
             <InfoServices image={"/images/siding.webp"} alt="siding image" 
-                title="Professional Siding Company For Quality Services"
-                description="Siding is not just about protection, it's also about aesthetics. At Fox Exterior Solutions, we understand the importance of having siding that not only shields your property from the elements but also enhances its curb appeal. Whether you're seeking to replace outdated siding or want to upgrade the look of your home, our siding installation and replacement services are tailored to your unique preferences."
+                title="Vinyl Siding"
+                description="Versatile and low-maintenance, vinyl siding comes in various colors and styles, providing excellent protection against the elements and lasting beauty."
+                text1="Vinyl siding installation that combines resistance and varied aesthetics"
+                text2="Low-maintenance coating solutions for long-lasting, attractive protection"
             />
         </Layout>
     )

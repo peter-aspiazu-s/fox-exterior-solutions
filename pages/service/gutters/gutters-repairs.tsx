@@ -9,7 +9,12 @@ function GuttersRepairsPage () {
             description="Gutters Services"
             keywords="Gutters"
         >
-            <InfoServices title="Best Professional Gutter Contractor." description="When it comes to safeguarding your property from water damage, trust Fox Exterior Solutions as your go-to gutter contractor. We pride ourselves on being more than just roofing experts; we're your dedicated partner for all your gutter needs. Our highly skilled team is fully committed to delivering top-quality gutter installation and replacement services." image={"/images/trim-gutters.webp"} alt="Trim & Gutters image" />
+            <InfoServices 
+                title="Gutters Repairs" 
+                description="Gutters plays the most important role in channeling rainwater away from your property's foundation and roof.  Whether you need to replace old, inefficient gutters or want a repair contact us." image={"/images/trim-gutters.webp"} alt="Trim & Gutters image" 
+                text1="Replacing outdated gutters for effective rainwater management"
+                text2="Gutter repair services to maintain the structural integrity of your property"    
+            />
         </Layout>
     )
 }

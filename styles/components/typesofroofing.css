@@ -1,0 +1,110 @@
+.typesofroofing{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #eeeeee;
+}
+
+.typesofroofing__container{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.typesofroofing__title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.typesofroofing__description{
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.typesofroofing__container-types{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.typesofroofing__type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.typesofroofing__type-title{
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.typesofroofing__type-description{
+    color: #333333;
+    text-align: center;
+}
+
+.typesofroofing__type-image{
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+
+@media screen and (min-width: 375px){
+    .typesofroofing__container{
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .typesofroofing__container{
+        width: 390px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .typesofroofing__container{
+        width: 690px;
+    }
+
+    .typesofroofing__container-types{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .typesofroofing__type{
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .typesofroofing__container{
+        width: 920px;
+    }
+
+    .typesofroofing__container-types{
+        justify-content: space-around;
+    }
+
+    .typesofroofing__type{
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .typesofroofing__container{
+        width: 1200px;
+    }
+
+    .typesofroofing__type{
+        width: 400px;
+    }
+}

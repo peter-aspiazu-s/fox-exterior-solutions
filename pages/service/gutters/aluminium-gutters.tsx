@@ -9,7 +9,12 @@ function AluminiumGuttersPage () {
             description="Gutters Services"
             keywords="Gutters"
         >
-            <InfoServices title="Best Professional Gutter Contractor." description="When it comes to safeguarding your property from water damage, trust Fox Exterior Solutions as your go-to gutter contractor. We pride ourselves on being more than just roofing experts; we're your dedicated partner for all your gutter needs. Our highly skilled team is fully committed to delivering top-quality gutter installation and replacement services." image={"/images/trim-gutters.webp"} alt="Trim & Gutters image" />
+            <InfoServices 
+                title="Aluminium Gutters" 
+                description="Lightweight and rust-resistant, aluminum gutters are popular due to their durability and low maintenance." image={"/images/trim-gutters.webp"} alt="Trim & Gutters image" 
+                text1="Installation of aluminum gutters that combine resistance and ease of maintenance"
+                text2="Durable, lightweight gutter solutions for reliable protection"
+            />
         </Layout>
     )
 }

@@ -14,10 +14,16 @@
     gap: 30px;
 }
 
-.misionvision__our{
+.misionvision__our-text, .misionvision__our-button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
+}
+
+.misionvision__our-container{
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -25,6 +31,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #eeeeee;
+    text-align: center;
 }
 
 .misionvision__text{
@@ -93,7 +100,7 @@
 @media screen and (min-width: 768px){
     .misionvision__container{
         width: 700px;
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: center;
     }
 }
@@ -103,8 +110,13 @@
         width: 920px;
     }
 
-    .misionvision__our{
-        width: 400px;
+    .misionvision__our-text, .misionvision__our-button{
+        width: 920px;
+    }
+
+    .misionvision__our-text{
+        flex-direction: row;
+        gap: 20px;
     }
 
     .misionvision__title{
@@ -121,8 +133,9 @@
         width: 1200px;
     }
 
-    .misionvision__our{
-        width: 500px;
+    .misionvision__our-text{
+        flex-direction: row;
+        gap: 40px;
     }
 
     .misionvision__block{

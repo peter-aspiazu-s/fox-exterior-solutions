@@ -3,7 +3,12 @@ import Swal from 'sweetalert2';
 import validator from 'validator';
 import { SpinnerLoading } from "../loading/SpinnerLoading";
 
-export const FormComponent: FC = () => {
+
+interface FormProps {
+    text?:boolean;
+}
+
+export const FormComponent: FC<FormProps> = ({text}) => {
 
     const [formData, setFormData] = useState({
         name: '',
@@ -116,10 +121,10 @@ export const FormComponent: FC = () => {
 
     return (
         <div className="formcomponent">
-            <div className="formcomponent__title">Quote Form</div>
-            <div className="formcomponent__text">Send us some basic information about your project needs and an expert from our team will be in touch shortly.</div>
+            <div className={`formcomponent__title ${text ? "formcomponent__textclass" : ""}`}>Quote Form</div>
+            <div className={`formcomponent__text ${text ? "formcomponent__textclass" : ""}`}>Send us some basic information about your project needs and an expert from our team will be in touch shortly.</div>
             <form className="formcomponent__form" onSubmit={handleSubmit}>
-                <label className="formcomponent__label" id='name'>NAME*</label>
+                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id='name'>NAME*</label>
                 <input 
                    className="formcomponent__input" 
                    type="text" 
@@ -127,7 +132,7 @@ export const FormComponent: FC = () => {
                    value={name} 
                    onChange={handleChange}   
                 />
-                <label className="formcomponent__label" id="email">EMAIL*</label>
+                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="email">EMAIL*</label>
                 <input 
                     className="formcomponent__input" 
                     type="text" 
@@ -135,7 +140,7 @@ export const FormComponent: FC = () => {
                     value={email}
                     onChange={handleChange}
                 />
-                <label className="formcomponent__label" id="phone">PHONE*</label>
+                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="phone">PHONE*</label>
                 <input 
                     className="formcomponent__input" 
                     type="text" 
@@ -143,7 +148,7 @@ export const FormComponent: FC = () => {
                     value={phone}
                     onChange={handleChange}
                 />
-                <label className="formcomponent__label" id="message">MESSAGE*</label>
+                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="message">MESSAGE*</label>
                 <textarea 
                     className="formcomponent__textarea" 
                     name="comment" 

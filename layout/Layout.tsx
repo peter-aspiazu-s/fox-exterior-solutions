@@ -8,8 +8,8 @@ import { CallToActionFooter } from "@/components/footer/CallToActionFooter";
 import { FooterComponent } from "@/components/footer/FooterComponent";
 import { CopyWrite } from "@/components/footer/CopyWrite";
 import { BannerComponent } from "@/components/banner/BannerComponent";
-import { AmountOfWorkDone } from "@/components/amount/AmountOfWorkDone";
 import { SectionServices } from "@/components/section/SectionServices";
+import { WhatsAppButton } from "@/components/whatsappbutton/WhatsAppButtom";
 
 
 interface LayoutProps {
@@ -61,22 +61,34 @@ export const Layout: FC<LayoutProps> = ({
             <BannerComponent 
                 image={
                     (lastElement === "siding-windows") ? "url(/images/siding.webp)" 
+                    : (lastElement === "vinyl-siding") ? "url(/images/siding.webp)"
+                    : (lastElement === "metal-siding") ? "url(/images/siding.webp)"
+                    : (lastElement === "hardie-board-siding") ? "url(/images/siding.webp)"
                     : (lastElement === "roofing") ? "url(/images/roofing.webp)"
                     : (lastElement === "metal-roofs") ? "url(/images/roofing2.jpg)"
                     : (lastElement === "asphalt-singles") ? "url(/images/roofing3.jpg)"
                     : (lastElement === "solar-shingles") ? "url(/images/roofing4.jpg)"
                     : (lastElement === "flat-low-slope-roof-styles") ? "url(/images/roofing5.jpg)"
-                    // : (router.asPath.split("/")[2] === "decks") ? "url(/images/decks.webp)"
                     : (lastElement === "gutters") ? "url(/images/trim-gutters.webp)"
+                    : (lastElement === "gutters-repairs") ? "url(/images/trim-gutters.webp)"
+                    : (lastElement === "aluminium-gutters") ? "url(/images/trim-gutters.webp)"
                     : "url(/images/bannerhome.gif)"
                 } 
                 
                 text={
-                    (router.asPath.split("/")[2] === "siding-windows") ? "Siding & Windows Services" 
-                    : (router.asPath.split("/")[2] === "roofing") ? "Roofing Services"
-                    // : (router.asPath.split("/")[2] === "decks") ? "Decks Services"
-                    : (router.asPath.split("/")[2] === "gutters") ? "Gutters Services"
-                    : (router.asPath.split("/")[1] === "contact") ? "Contact"
+                    (lastElement === "siding-windows") ? "Siding & Windows Services" 
+                    : (lastElement === "vinyl-siding") ? "Vinyl Siding"
+                    : (lastElement === "metal-siding") ? "Metal Siding"
+                    : (lastElement === "hardie-board-siding") ? "Hardie Board Siding"
+                    : (lastElement === "roofing") ? "Roofing Services"
+                    : (lastElement === "metal-roofs") ? "Metal Roofs"
+                    : (lastElement === "asphalt-singles") ? "Asphalt Singles"
+                    : (lastElement === "solar-shingles") ? "Solar Shingles"
+                    : (lastElement === "flat-low-slope-roof-styles") ? "Flat Low Slope Roof Styles"
+                    : (lastElement === "gutters") ? "Gutters Services"
+                    : (lastElement === "gutters-repairs") ? "Gutters Repairs"
+                    : (lastElement === "aluminium-gutters") ? "Aluminium Gutters"
+                    : (lastElement === "contact") ? "Contact"
                     : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
                 } 
                 
@@ -87,17 +99,26 @@ export const Layout: FC<LayoutProps> = ({
                 children
             }
 
-            <AmountOfWorkDone />
+            {/* <AmountOfWorkDone /> */}
+            
 
             <div ref={sectionServicesRef}>
                 <SectionServices />
             </div>
 
-            <CallToActionFooter />
+
+
+            {
+                (lastElement === "contact") 
+                ? <></> 
+                :<CallToActionFooter />
+            }
 
             <FooterComponent />
 
             <CopyWrite />
+
+            <WhatsAppButton />
         </>
     )
 }

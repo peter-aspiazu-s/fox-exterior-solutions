@@ -10,8 +10,10 @@ function MetalSidingPage () {
             keywords="Siding"
         >
             <InfoServices image={"/images/siding.webp"} alt="siding image" 
-                title="Professional Siding Company For Quality Services"
-                description="Siding is not just about protection, it's also about aesthetics. At Fox Exterior Solutions, we understand the importance of having siding that not only shields your property from the elements but also enhances its curb appeal. Whether you're seeking to replace outdated siding or want to upgrade the look of your home, our siding installation and replacement services are tailored to your unique preferences."
+                title="Metal Siding"
+                description="Sleek and modern, metal siding is known for its durability and resistance to fire and pests, making it an excellent choice for commercial properties."
+                text1="Instalación de revestimiento metálico que combina estilo contemporáneo y resistencia excepcional"
+                text2="Soluciones de revestimiento duradero y resistente al fuego para propiedades comerciales"
             />
         </Layout>
     )
