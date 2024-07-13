@@ -121,7 +121,7 @@ export const FormComponent: FC<FormProps> = ({text}) => {
 
     return (
         <div className="formcomponent">
-            <div className={`formcomponent__title ${text ? "formcomponent__textclass" : ""}`}>Quote Form</div>
+            <div className={`formcomponent__title ${text ? "formcomponent__textclass" : ""}`}>Contact Form</div>
             <div className={`formcomponent__text ${text ? "formcomponent__textclass" : ""}`}>Send us some basic information about your project needs and an expert from our team will be in touch shortly.</div>
             <form className="formcomponent__form" onSubmit={handleSubmit}>
                 <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id='name'>NAME*</label>

@@ -17,6 +17,8 @@ export const HeaderComponent: FC<headerComponentProps> = ({
 }) => {
 
     const router = useRouter();
+    const pathArray = router.asPath.split("/");
+    const lastElement = pathArray[pathArray.length - 1];
     
     return (
         <div className="headercomponent">
@@ -72,9 +74,13 @@ export const HeaderComponent: FC<headerComponentProps> = ({
                         </div>
                     ))}
                 </div>
-                <Link href="/contact" className="headercomponent__getaquote">
+
+                {
+                    (lastElement !== "contact") && <Link href="/contact" className="headercomponent__getaquote">
                     GET A QUOTE <span>&gt;</span>
                 </Link>
+                }
+                
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 .misionvision{
-    background-color: #ef7e3a;
+    /* background-color: #ef7e3a; */
+    background-color: #1c98d4;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,6 +20,49 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+
+.misionvision__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.4);
+    color: #eeeeee;
+    font-weight: bold;
+    width: auto;
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 30px;
+    border: 1px solid #eeeeee;
+    margin-top: 20px;
+}
+
+.misionvision__button span{
+    font-size: 10px; /* Ajusta el tamaño de la fuente */
+    vertical-align: middle; /* Opcional: ajusta la alineación vertical */
+    font-weight: bold;
+    border: 2px solid #eeeeee;
+    border-radius: 30px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeeeee;
+}
+
+.misionvision__button:hover{
+    background-color: #eeeeee;
+    color: #1c98d4;
+    transition: all .3s;
+}
+.misionvision__button:hover span{
+    border: 2px solid #1c98d4;
+    color: #1c98d4;
+    transform: translateX(8px);
+    transition: all .3s;
 }
 
 .misionvision__our-container{

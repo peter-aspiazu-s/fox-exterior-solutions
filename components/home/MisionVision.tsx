@@ -16,7 +16,7 @@ export const MisionVision = () => {
                     </div>
                 </div>
                 <div className="misionvision__our-button">
-                    <Link href="/" className="bannercomponent__button">
+                    <Link href="/" className="misionvision__button">
                         GET A QUOTA <span>&gt;</span>
                     </Link>
                 </div>

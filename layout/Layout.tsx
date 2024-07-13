@@ -58,7 +58,7 @@ export const Layout: FC<LayoutProps> = ({
 
             <Sidebar toggleMenu={toggleMenu} menuOpen={menuOpen} />
 
-            <BannerComponent 
+            {(lastElement !== "contact") && <BannerComponent 
                 image={
                     (lastElement === "siding-windows") ? "url(/images/siding.webp)" 
                     : (lastElement === "vinyl-siding") ? "url(/images/siding.webp)"
@@ -93,7 +93,7 @@ export const Layout: FC<LayoutProps> = ({
                 } 
                 
                 onButtonClick={scrollToSection} // Pasar la función al BannerComponent
-            />
+            />}
 
             {
                 children
@@ -102,10 +102,12 @@ export const Layout: FC<LayoutProps> = ({
             {/* <AmountOfWorkDone /> */}
             
 
-            <div ref={sectionServicesRef}>
+            {
+                (lastElement !== "contact")
+                && <div ref={sectionServicesRef}>
                 <SectionServices />
             </div>
-
+            }
 
 
             {

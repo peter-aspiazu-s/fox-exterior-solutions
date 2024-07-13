@@ -1,17 +1,22 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from 'next/image';
+import { SlideImage } from "./SlideImage";
 
 interface InfoProps {
-    image: string;
-    alt: string;
+    images: ImageType[];
     title: string;
     description: string;
     text1: string;
     text2: string;
 }
 
-export const InfoServices: FC<InfoProps> = ({image, alt, title, description, text1, text2}) => {
+type ImageType = {
+    image: string;
+    alt: string;
+}
+
+export const InfoServices: FC<InfoProps> = ({images, title, description, text1, text2}) => {
 
     return(
         <div className="infoservices">
@@ -32,7 +37,8 @@ export const InfoServices: FC<InfoProps> = ({image, alt, title, description, tex
                     </Link>
                 </div>
                 <div className="infoservices__container-image">
-                    <Image src={image} alt={alt} layout="fill"/>
+                    {/* <Image src={image} alt={alt} layout="fill"/> */}
+                    <SlideImage images={images} />
                 </div>
             </div>
         </div>

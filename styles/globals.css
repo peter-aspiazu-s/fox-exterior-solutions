@@ -31,3 +31,7 @@
 @import url(components/contactcomponent.css);
 @import url(components/formcomponent.css);
 @import url(components/mapcomponents.css);
+
+
+/* SERVICES */
+@import url(components/swiper.css);

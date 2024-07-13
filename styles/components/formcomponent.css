@@ -7,11 +7,13 @@
 .formcomponent__title{
    font-size: 30px;
    font-weight: bold;
+   color: #eeeeee;
+   text-align: center;
 }
 
 .formcomponent__text{
     text-align: center;
-    color: #333333;
+    color: #eeeeee;
 }
 
 .formcomponent__form{
@@ -22,7 +24,7 @@
 
 .formcomponent__label{
     font-size: 20px;
-    color: #333333;
+    color: #eeeeee;
 }
 
 .formcomponent__textclass{
@@ -49,19 +51,19 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    background-color: #ef7e3a;
+    background-color: transparent;
     color: #eeeeee;
     font-weight: bold;
     width: 200px;
     height: 50px;
-    border: 0;
+    border: 1px solid #eeeeee;
     border-radius: 30px;
     margin-top: 10px;
     cursor: pointer;
 }
 
 .formcomponent__button:hover{
-    background-color: #1e5ca7;
+    background-color: #eeeeee;
     color: #ef7e3a;
     transition: all .3s;
 }
@@ -88,19 +90,22 @@
 }
 
 @media screen and (min-width: 768px){
-    .formcomponent{
+    /* .formcomponent{
         width: 330px;
+    } */
+    .formcomponent{
+        width: 600px;
     }
 }
 
 @media screen and (min-width: 1024px){
-    .formcomponent{
+    /* .formcomponent{
         width: 440px;
-    }
+    } */
 }
 
 @media screen and (min-width: 1440px){
-    .formcomponent{
+    /* .formcomponent{
         width: 580px;
-    }
+    } */
 }
