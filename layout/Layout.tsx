@@ -89,7 +89,8 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "gutters-repairs") ? "Gutters Repairs"
                     : (lastElement === "aluminium-gutters") ? "Aluminium Gutters"
                     : (lastElement === "contact") ? "Contact"
-                    : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
+                    // : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
+                    : "AQUÍ VA EL SLOGAN"
                 } 
                 
                 onButtonClick={scrollToSection} // Pasar la función al BannerComponent

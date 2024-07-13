@@ -16,10 +16,10 @@
     color: #eeeeee;
 }
 
-.formcomponent__form{
+.formcomponent__form, .formcomponent__address-group{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .formcomponent__label{
@@ -36,6 +36,12 @@
     border-bottom: 1px solid #333333;
     background-color: #e0e0e0;
     height: 40px;
+    padding-left: 20px;
+}
+
+.formcomponent__select{
+    height: 40px;
+    background-color: #e0e0e0;
 }
 
 .formcomponent__textarea{
@@ -43,6 +49,8 @@
     border-bottom: 1px solid #333333;
     background-color: #e0e0e0;
     height: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .formcomponent__button{
@@ -54,7 +62,7 @@
     background-color: transparent;
     color: #eeeeee;
     font-weight: bold;
-    width: 200px;
+    width: auto;
     height: 50px;
     border: 1px solid #eeeeee;
     border-radius: 30px;
@@ -90,22 +98,66 @@
 }
 
 @media screen and (min-width: 768px){
-    /* .formcomponent{
-        width: 330px;
-    } */
     .formcomponent{
         width: 600px;
+    }
+
+    .formcomponent__form{
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+
+    .formcomponent__form input:nth-child(1),
+    .formcomponent__form input:nth-child(2) {
+        grid-column: span 1;
+    }
+
+    .formcomponent__form input:nth-child(3),
+    .formcomponent__form input:nth-child(4) {
+        grid-column: span 1;
+    }
+
+    .formcomponent__address-group {
+        flex-direction: row;
+        justify-content: space-between;
+        grid-column: span 2;
+    }
+
+    .formcomponent__form input:nth-child(8),
+    .formcomponent__form select:nth-child(9) {
+        grid-column: span 1;
+    }
+
+    .formcomponent__form textarea,
+    .formcomponent__button {
+        grid-column: span 2;
     }
 }
 
 @media screen and (min-width: 1024px){
-    /* .formcomponent{
-        width: 440px;
-    } */
+    .formcomponent{
+        width: 800px;
+    }
+
+    .formcomponent__address-group input{
+        width: 250px;
+    }
+
+    .formcomponent__title{
+        font-size: 50px;
+     }
 }
 
 @media screen and (min-width: 1440px){
-    /* .formcomponent{
-        width: 580px;
-    } */
+    .formcomponent{
+        width: 920px;
+    }
+
+    .formcomponent__address-group input{
+        width: 290px;
+    }
+
+    .formcomponent__title{
+        font-size: 50px;
+     }
 }

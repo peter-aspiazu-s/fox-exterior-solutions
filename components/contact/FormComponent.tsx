@@ -8,20 +8,44 @@ interface FormProps {
     text?:boolean;
 }
 
+const servicesForm = [
+    {service: "Roofing"},
+    {service: "Metal Roofs"},
+    {service: "Asphalt Singles"},
+    {service: "Solar Shingles"},
+    {service: "Flat/Low Slope Roof Styles"},
+    {service: "Siding & Windows"},
+    {service: "Vinyl Siding"},
+    {service: "Metal Siding"},
+    {service: "Hardie Board Siding"},
+]
+
 export const FormComponent: FC<FormProps> = ({text}) => {
 
     const [formData, setFormData] = useState({
-        name: '',
+        firstname: '',
+        lastname: '',
         email:'',
         phone: '',
+        address: '',
+        city: '',
+        zipcode: '',
+        availableappointmenttime: '',
+        services: '',
         message: '',
     });
     const [loading, setLoading] = useState(false);
 
     const {
-        name, 
+        firstname,
+        lastname, 
         email, 
         phone,
+        address,
+        city,
+        zipcode,
+        availableappointmenttime,
+        services,
         message
     } = formData;
 
@@ -47,9 +71,15 @@ export const FormComponent: FC<FormProps> = ({text}) => {
                         confirmButtonText: 'ok'
                     });
                     setFormData({
-                        name: '',
+                        firstname: '',
+                        lastname: '',
                         email: '',
                         phone: '',
+                        address: '',
+                        city: '',
+                        zipcode: '',
+                        availableappointmenttime: '',
+                        services: '',
                         message: '',
                     });
                 } else {
@@ -70,7 +100,7 @@ export const FormComponent: FC<FormProps> = ({text}) => {
         }
     }
 
-    const handleChange = (e:ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (e:ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
 
         const {value, name} = e.target;
 
@@ -82,11 +112,22 @@ export const FormComponent: FC<FormProps> = ({text}) => {
     }
 
     const isValid = () => {
-        if(name.trim().length <= 0){
+        if(firstname.trim().length <= 0){
 
             Swal.fire({
                 title: 'Error!',
-                text: 'The name is required',
+                text: 'The first name is required',
+                icon: 'error',
+                confirmButtonText: 'ok'
+            });
+              
+            return false;
+        }
+        if(lastname.trim().length <= 0){
+
+            Swal.fire({
+                title: 'Error!',
+                text: 'The last name is required',
                 icon: 'error',
                 confirmButtonText: 'ok'
             });
@@ -124,36 +165,95 @@ export const FormComponent: FC<FormProps> = ({text}) => {
             <div className={`formcomponent__title ${text ? "formcomponent__textclass" : ""}`}>Contact Form</div>
             <div className={`formcomponent__text ${text ? "formcomponent__textclass" : ""}`}>Send us some basic information about your project needs and an expert from our team will be in touch shortly.</div>
             <form className="formcomponent__form" onSubmit={handleSubmit}>
-                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id='name'>NAME*</label>
+                {/* <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id='firstname'>FIRST NAME*</label> */}
                 <input 
                    className="formcomponent__input" 
                    type="text" 
-                   name='name'
-                   value={name} 
-                   onChange={handleChange}   
+                   name='firstname'
+                   value={firstname} 
+                   onChange={handleChange} 
+                   placeholder="First Name*"  
                 />
-                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="email">EMAIL*</label>
+                {/* <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id='lastname'>LAST NAME*</label> */}
+                <input 
+                   className="formcomponent__input" 
+                   type="text" 
+                   name='lastname'
+                   value={lastname} 
+                   onChange={handleChange}   
+                   placeholder="Last Name*"
+                />
+                {/* <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="email">EMAIL*</label> */}
                 <input 
                     className="formcomponent__input" 
                     type="text" 
                     name='email'
                     value={email}
                     onChange={handleChange}
+                    placeholder="Email*"
                 />
-                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="phone">PHONE*</label>
+                {/* <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="phone">PHONE*</label> */}
                 <input 
                     className="formcomponent__input" 
                     type="text" 
                     name='phone'
                     value={phone}
                     onChange={handleChange}
+                    placeholder="Phone*"
                 />
-                <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="message">MESSAGE*</label>
+                {/* <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="address">ADDRESS</label> */}
+                <div className="formcomponent__address-group">
+                    <input
+                        className="formcomponent__input"
+                        type="text"
+                        name='address'
+                        value={address}
+                        onChange={handleChange}
+                        placeholder="Address"
+                    />
+                    <input
+                        className="formcomponent__input"
+                        type="text"
+                        name='city'
+                        value={city}
+                        onChange={handleChange}
+                        placeholder="City"
+                    />
+                    <input
+                        className="formcomponent__input"
+                        type="text"
+                        name='zipcode'
+                        value={zipcode}
+                        onChange={handleChange}
+                        placeholder="Zip Code"
+                    />
+                </div>
+                <input 
+                    className="formcomponent__input" 
+                    type="text" 
+                    name='availableappointmenttime'
+                    value={availableappointmenttime}
+                    onChange={handleChange}
+                    placeholder="Available Appointment Time"
+                />
+                <select 
+                    className="formcomponent__select" 
+                    name='services' 
+                    value={services} 
+                    onChange={handleChange} 
+                >
+                    <option value="">Select a service</option>
+                    {servicesForm.map((service, index) => (
+                        <option key={index + service.service} value={service.service}>{service.service}</option>
+                    ))}
+                </select>
+                {/* <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="message">MESSAGE*</label> */}
                 <textarea 
                     className="formcomponent__textarea" 
                     name="comment" 
                     value={message}
-                    onChange={handleChange}    
+                    onChange={handleChange}   
+                    placeholder="How can we help you?" 
                 />
                 {
                    loading
