@@ -18,9 +18,9 @@ function AsphaltSinglesPage () {
 
     return(
         <Layout
-            title="Roofing | Page"
-            description="Roofing Services"
-            keywords="Roofing"
+            title="Asphalt Singles | Page"
+            description="Asphalt Singles Services"
+            keywords="Roofing, Asphalt Singles"
         >
             <InfoServices images={imageArr}
                 title="Asphalt Singles."

@@ -11,9 +11,9 @@ function VinylSidingPage () {
 
     return(
         <Layout
-            title="Siding | Page"
-            description="Siding Services"
-            keywords="Siding"
+            title="Vinyl Siding | Page"
+            description="Vinyl Siding Services"
+            keywords="Siding, Vinyl Siding"
         >
             <InfoServices images={imageArr}
                 title="Vinyl Siding"

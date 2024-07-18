@@ -6,9 +6,9 @@ import { MisionVision } from "@/components/home/MisionVision";
 function HomePage() {
   return (
     <Layout
-      title=""
-      description=""
-      keywords=""
+      title="Home | Page"
+      description="Home Page Fox Exterior Solutions"
+      keywords="Fox Exterior Solutions"
     >
       <div>
 

@@ -19,9 +19,9 @@ function FlatLowSlopeRoofStylesPage () {
 
     return(
         <Layout
-            title="Roofing | Page"
-            description="Roofing Services"
-            keywords="Roofing"
+            title="Flat/Low Slope Roof Styles | Page"
+            description="Flat/Low Slope Roof Styles Services"
+            keywords="Roofing, Flat/Low Slope Roof Styles"
         >
             <InfoServices images={imageArr}
                 title="Flat/Low Slope Roof Styles."

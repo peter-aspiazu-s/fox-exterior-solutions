@@ -18,9 +18,9 @@ function MetalRoofsPage () {
 
     return(
         <Layout
-            title="Roofing | Page"
-            description="Roofing Services"
-            keywords="Roofing"
+            title="Metal Roofs | Page"
+            description="Metal Roofs Services"
+            keywords="Roofing, Metal Roofs"
         >
             <InfoServices images={imageArr}
                 title="Metal Roofs"

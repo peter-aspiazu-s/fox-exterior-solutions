@@ -12,15 +12,15 @@ function HardieBoardSidingPage () {
 
     return(
         <Layout
-            title="Siding | Page"
-            description="Siding Services"
-            keywords="Siding"
+            title="Hardie Board Siding | Page"
+            description="Hardie Board Siding Services"
+            keywords="Siding, Hardie Board Siding"
         >
             <InfoServices images={imageArr} 
                 title="Hardie Board Siding"
                 // description="Durable and resistant to rot and pests, Hardie plank siding offers the appearance of wood without all the maintenance, making it a popular choice for a timeless look."
                 description="Durable and resistant to rot and pests, Hardie plank siding offers the appearance of wood without all the maintenance, making it a popular choice for a timeless look."
-                text1="Instalación de revestimiento Hardie Board que combina durabilidad y estética de madera"
+                text1="Hardie Board siding installation that combines durability and wood aesthetics."
                 text2="Soluciones de revestimiento resistentes a plagas y putrefacción para una belleza duradera"
             />
         </Layout>

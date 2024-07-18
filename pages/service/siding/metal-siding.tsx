@@ -11,9 +11,9 @@ function MetalSidingPage () {
 
     return(
         <Layout
-            title="Siding | Page"
-            description="Siding Services"
-            keywords="Siding"
+            title="Metal Siding | Page"
+            description="Metal Siding Services"
+            keywords="Siding, Metal Siding"
         >
             <InfoServices images={imageArr}
                 title="Metal Siding"

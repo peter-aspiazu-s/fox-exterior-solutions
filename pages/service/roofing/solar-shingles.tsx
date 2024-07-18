@@ -19,9 +19,9 @@ function SolarShinglesPage () {
 
     return(
         <Layout
-            title="Roofing | Page"
-            description="Roofing Services"
-            keywords="Roofing"
+            title="Solar Shingles | Page"
+            description="Solar Shingles Services"
+            keywords="Roofing, Solar Shingles"
         >
             <InfoServices images={imageArr}
                 title="Solar Shingles."

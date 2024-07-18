@@ -11,9 +11,9 @@ function AluminiumGuttersPage () {
 
     return(
         <Layout
-            title="Gutters | Page"
-            description="Gutters Services"
-            keywords="Gutters"
+            title="Aluminium Gutters | Page"
+            description="Aluminium Gutters Services"
+            keywords="Gutters, Aluminium Gutters"
         >
             <InfoServices images={imageArr}
                 title="Aluminium Gutters" 

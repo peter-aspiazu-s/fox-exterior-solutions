@@ -12,9 +12,9 @@ function GuttersRepairsPage () {
 
     return(
         <Layout
-            title="Gutters | Page"
-            description="Gutters Services"
-            keywords="Gutters"
+            title="Gutters Repairs | Page"
+            description="Gutters Repairs Services"
+            keywords="Gutters, Gutters Repairs"
         >
             <InfoServices images={imageArr}
                 title="Gutters Repairs" 
