@@ -73,6 +73,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "gutters") ? "url(/images/trim-gutters.webp)"
                     : (lastElement === "gutters-repairs") ? "url(/images/trim-gutters.webp)"
                     : (lastElement === "aluminium-gutters") ? "url(/images/trim-gutters.webp)"
+                    : (lastElement === "maintenance") ? "url(/images/maintenance.webp)"
                     : "url(/images/bannerhome.gif)"
                 } 
                 
@@ -89,6 +90,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "gutters") ? "Gutters Services"
                     : (lastElement === "gutters-repairs") ? "Gutters Repairs"
                     : (lastElement === "aluminium-gutters") ? "Aluminium Gutters"
+                    : (lastElement === "maintenance") ? "Maintenance"
                     : (lastElement === "contact") ? "Contact"
                     // : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
                     : "AQUÍ VA EL SLOGAN"

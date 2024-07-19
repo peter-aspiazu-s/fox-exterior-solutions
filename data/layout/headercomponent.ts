@@ -26,5 +26,6 @@ export const headerComponentData = [
             {category: "", name: "Aluminium Gutters", redirect: "/service/gutters/aluminium-gutters"},
         ]
     },
+    {name: "Maintenance", redirect: "/service/maintenance"},
     {name: "Contact", redirect: "/contact"},
 ]
