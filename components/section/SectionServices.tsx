@@ -19,6 +19,8 @@ export const SectionServices:FC = () => {
                         <Link href="/service/roofing/metal-roofs" className="sectionservices__link">Metal Roofs <RightIcon /></Link>
                         <Link href="/service/roofing/asphalt-singles" className="sectionservices__link">Asphalt Singles <RightIcon /></Link>
                         <Link href="/service/roofing/solar-shingles" className="sectionservices__link">Solar Shingles <RightIcon /></Link>
+                        <Link href="/service/maintenance" className="sectionservices__link">Maintenance & Inspection <RightIcon /></Link>
+                        
                     </div>
                 </div>
 
@@ -36,6 +38,7 @@ export const SectionServices:FC = () => {
                         <Link href="/service/siding/vinyl-siding" className="sectionservices__link">Vinyl Siding <RightIcon /></Link>
                         <Link href="/service/siding/metal-siding" className="sectionservices__link">Metal Siding <RightIcon /></Link>
                         <Link href="/service/siding/hardie-board-siding" className="sectionservices__link">Hardie Board Siding <RightIcon /></Link>
+                        <Link href="/service/maintenance" className="sectionservices__link">Maintenance & Inspection <RightIcon /></Link>
                         {/* <Link href="/service/gutters" className="sectionservices__link">Gutters <RightIcon /></Link> */}
                         {/* <Link href="/service/gutters/gutters-repairs" className="sectionservices__link">Gutters Repairs <RightIcon /></Link> */}
                         {/* <Link href="/service/gutters/aluminium-gutters" className="sectionservices__link">Aluminium Gutters <RightIcon /></Link> */}

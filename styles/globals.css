@@ -19,6 +19,8 @@
 @import url(components/righticon.css);
 @import url(components/whatsappbutton.css);
 @import url(components/brandscomponent.css);
+@import url(components/whychooseus.css);
+@import url(components/projectscomponent.css);
 
 /* HOME */
 @import url(components/sectioninfoservices.css);
@@ -27,6 +29,9 @@
 /* ROOFING */
 @import url(components/infoservices.css);
 @import url(components/typesofroofing.css);
+
+/* MAINTENANCE */
+@import url(components/infomaintenance.css);
 
 /* CONTACT */
 @import url(components/contactcomponent.css);

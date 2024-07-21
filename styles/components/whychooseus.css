@@ -1,0 +1,250 @@
+.whychooseus{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1c98d4;
+    display: flex;
+    justify-content: center;
+}
+
+.whychooseus__container{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.whychooseus__container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whychooseus__title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.whychooseus__subtitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.whychooseus__item{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+}
+
+.whychooseus__item svg{
+    display: inline;
+    width: 68.75px;
+    height: 80px;
+    fill: #eeeeee !important;
+}
+
+.whychooseus__item-text{
+    width: 206.25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whychooseus__item-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.whychooseus__item-description{
+    color: #333333;
+    font-weight: 600;
+}
+
+.whychooseus__container-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.whychooseus__image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+@media screen and (min-width: 375px){
+    .whychooseus__container{
+        width: 350px;
+    }
+    
+    .whychooseus__item-text{
+        width: 260px;
+    }
+
+    .whychooseus__image{
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .whychooseus__container{
+        width: 400px;
+    }
+    
+    .whychooseus__item-text{
+        width: 300px;
+    }
+
+    .whychooseus__item-title{
+        font-size: 23px;
+    }
+
+    .whychooseus__item-description{
+        font-size: 18px;
+    }
+
+    .whychooseus__image{
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .whychooseus__container{
+        width: 700px;
+    }
+
+    .whychooseus__subtitle{
+        font-size: 35px;
+    }
+    
+    .whychooseus__item-text{
+        width: 100%;
+    }
+
+    .whychooseus__container-images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 10px;
+        grid-template-areas:
+        "img1 img1 img1 img2 img2"
+        "img3 img3 img4 img4 img4"
+    }
+
+    .whychooseus__image:nth-child(1) {
+        grid-area: img1;
+        width: auto;
+        height: 330px;
+    }
+    .whychooseus__image:nth-child(2) {
+        grid-area: img2;
+        height: 300px;
+        width: auto;
+        align-self: flex-end;
+    }
+    .whychooseus__image:nth-child(3) {
+        height: 300px;
+        width: auto;
+        align-self: flex-start;
+        grid-area: img3;
+    }
+    .whychooseus__image:nth-child(4) {
+        height: 330px;
+        width: auto;
+        grid-area: img4;
+    }
+
+    .whychooseus__image {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .whychooseus__container{
+        width: 920px;
+        flex-direction: row;
+    }
+
+    .whychooseus__container-text{
+        width: 460px;
+    }
+
+    .whychooseus__container-images{
+        width: 460px;
+    }
+
+    .whychooseus__image:nth-child(1) {
+        height: 250px;
+    }
+    .whychooseus__image:nth-child(2) {
+        height: 200px;
+    }
+    .whychooseus__image:nth-child(3) {
+        height: 200px;
+    }
+    .whychooseus__image:nth-child(4) {
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .whychooseus__container{
+        width: 1200px;
+        flex-direction: row;
+    }
+
+    .whychooseus__container-text{
+        width: 600px;
+    }
+
+    .whychooseus__container-images{
+        width: 600px;
+    }
+
+    .whychooseus__title{
+        font-size: 30px;
+    }
+
+    .whychooseus__subtitle{
+        font-size: 50px;
+    }
+    
+    .whychooseus__item svg{
+        display: inline;
+        width: 100px;
+        height: 80px;
+    }
+
+    .whychooseus__item-text{
+        width: 500px;
+    }
+
+    .whychooseus__item-title{
+        font-size: 30px;
+    }
+
+    .whychooseus__item-description{
+        font-size: 20px;
+    }
+
+    .whychooseus__image:nth-child(1) {
+        height: 300px;
+    }
+    .whychooseus__image:nth-child(2) {
+        height: 250px;
+    }
+    .whychooseus__image:nth-child(3) {
+        height: 250px;
+    }
+    .whychooseus__image:nth-child(4) {
+        height: 300px;
+    }
+
+}

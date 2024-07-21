@@ -11,6 +11,8 @@ import { BannerComponent } from "@/components/banner/BannerComponent";
 import { SectionServices } from "@/components/section/SectionServices";
 import { WhatsAppButton } from "@/components/whatsappbutton/WhatsAppButtom";
 import { BrandsComponent } from "@/components/brands/BrandsComponent";
+import { WhyChooseUs } from "@/components/whychooseus/WhyChooseUs";
+import { ProjectsComponent } from "@/components/projectscomponent/ProjectsComponent";
 
 
 interface LayoutProps {
@@ -90,7 +92,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "gutters") ? "Gutters Services"
                     : (lastElement === "gutters-repairs") ? "Gutters Repairs"
                     : (lastElement === "aluminium-gutters") ? "Aluminium Gutters"
-                    : (lastElement === "maintenance") ? "Maintenance"
+                    : (lastElement === "maintenance") ? "Maintenance & Inspection"
                     : (lastElement === "contact") ? "Contact"
                     // : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
                     : "AQUÍ VA EL SLOGAN"
@@ -112,6 +114,40 @@ export const Layout: FC<LayoutProps> = ({
                 <SectionServices />
             </div>
             }
+
+            {
+                (lastElement === "siding-windows") ? <></> 
+                : (lastElement === "vinyl-siding") ? <></>
+                : (lastElement === "metal-siding") ? <></>
+                : (lastElement === "hardie-board-siding") ? <></>
+                : (lastElement === "roofing") ? <></>
+                : (lastElement === "metal-roofs") ? <></>
+                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "solar-shingles") ? <></>
+                : (lastElement === "flat-low-slope-roof-styles") ? <></>
+                : (lastElement === "gutters") ? <></>
+                : (lastElement === "gutters-repairs") ? <></>
+                : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "contact") ? <></>
+                :<WhyChooseUs />
+            }  
+
+            {
+                (lastElement === "siding-windows") ? <></> 
+                : (lastElement === "vinyl-siding") ? <></>
+                : (lastElement === "metal-siding") ? <></>
+                : (lastElement === "hardie-board-siding") ? <></>
+                : (lastElement === "roofing") ? <></>
+                : (lastElement === "metal-roofs") ? <></>
+                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "solar-shingles") ? <></>
+                : (lastElement === "flat-low-slope-roof-styles") ? <></>
+                : (lastElement === "gutters") ? <></>
+                : (lastElement === "gutters-repairs") ? <></>
+                : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "contact") ? <></>
+                :<ProjectsComponent />
+            }            
 
             {
                 (lastElement === "siding-windows") ? <></> 

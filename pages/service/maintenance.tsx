@@ -1,5 +1,6 @@
 import { Layout } from "@/layout/Layout";
 import { InfoServices } from "@/components/services/InfoService";
+import { InfoMaintenance } from "@/components/infomaintenance/InfoMaintenance";
 
 
 const imageArr = [
@@ -18,17 +19,19 @@ function MaintenancePage () {
 
     return(
         <Layout
-            title="MaintenancePage | Page"
-            description="MaintenancePage Services"
+            title="Maintenance and Inspections | Page"
+            description="Maintenance and Inspections Services"
             keywords="MaintenancePage"
         >
             <InfoServices 
                 images={imageArr}
-                title="MaintenancePage Services"
+                title="Maintenance & Inspection Services"
                 description="Fox Exterior Solutions ensures the longevity of your roof with comprehensive maintenance and inspection services. Our team identifies potential issues early, preventing costly damages and extending the life of your roof. We cater to both residential and commercial properties, offering tailored solutions to meet diverse needs."
                 text1="Storm Damage Inspections: Assess roofs for damage caused by severe weather to assist with insurance claims."
                 text2="Leak and Repair Inspections: Identify and address existing leaks or visible roof issues to prevent further damage."
             />
+
+            <InfoMaintenance />
         </Layout>
     )
 }

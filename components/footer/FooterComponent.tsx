@@ -37,6 +37,7 @@ export const FooterComponent: FC = () => {
                     <Link href="/service/siding/vinyl-siding" className="footercomponent__link">Vinyl Siding</Link>
                     <Link href="/service/siding/metal-siding" className="footercomponent__link">Metal Siding</Link>
                     <Link href="/service/siding/hardie-board-siding" className="footercomponent__link">Hardie Board Siding</Link>
+                    <Link href="/service/maintenance" className="footercomponent__link">Maintenance & Inspection</Link>
                 </div>
 
                 <div className="footercomponent__section">
@@ -45,6 +46,7 @@ export const FooterComponent: FC = () => {
                     <Link href="/service/roofing/metal-roofs" className="footercomponent__link">Metal Roofs</Link>
                     <Link href="/service/roofing/asphalt-singles" className="footercomponent__link">Asphalt Singles</Link>
                     <Link href="/service/roofing/solar-shingles" className="footercomponent__link">Solar Shingles</Link>
+                    <Link href="/service/maintenance" className="footercomponent__link">Maintenance & Inspection</Link>
                 </div>
 
                 <div className="footercomponent__section">
