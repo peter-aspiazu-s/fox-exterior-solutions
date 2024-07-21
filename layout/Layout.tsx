@@ -13,6 +13,7 @@ import { WhatsAppButton } from "@/components/whatsappbutton/WhatsAppButtom";
 import { BrandsComponent } from "@/components/brands/BrandsComponent";
 import { WhyChooseUs } from "@/components/whychooseus/WhyChooseUs";
 import { ProjectsComponent } from "@/components/projectscomponent/ProjectsComponent";
+import { OurProcess } from "@/components/ourprocess/OurProcess";
 
 
 interface LayoutProps {
@@ -164,6 +165,23 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "aluminium-gutters") ? <></>
                 : (lastElement === "contact") ? <></>
                 :<BrandsComponent />
+            }
+
+            {
+                (lastElement === "siding-windows") ? <></> 
+                : (lastElement === "vinyl-siding") ? <></>
+                : (lastElement === "metal-siding") ? <></>
+                : (lastElement === "hardie-board-siding") ? <></>
+                : (lastElement === "roofing") ? <></>
+                : (lastElement === "metal-roofs") ? <></>
+                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "solar-shingles") ? <></>
+                : (lastElement === "flat-low-slope-roof-styles") ? <></>
+                : (lastElement === "gutters") ? <></>
+                : (lastElement === "gutters-repairs") ? <></>
+                : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "contact") ? <></>
+                :<OurProcess />
             }
 
             {

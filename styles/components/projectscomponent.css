@@ -231,4 +231,19 @@
     .projectscomponent__box-title{
         font-size: 30px;
     }
+
+    .projectscomponent__projects-card-button:hover{
+        background-color: #1c98d4;
+        transition: all .3s;
+    }
+
+    .projectscomponent__box-button:hover{
+        background-color: #1c98d4;
+        transition: all .3s;
+    }
+
+    .projectscomponent__box-link:hover{
+        transform: scale(1.1);
+        transition: all .3s;
+    }
 }
