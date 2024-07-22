@@ -17,10 +17,9 @@ function TrimGuttersPage () {
         >
             <InfoServices images={imageArr}
                 title="Best Professional Gutter Contractor." 
-                // description="When it comes to safeguarding your property from water damage, trust Fox Exterior Solutions as your go-to gutter contractor. We pride ourselves on being more than just roofing experts; we're your dedicated partner for all your gutter needs. Our highly skilled team is fully committed to delivering top-quality gutter installation and replacement services."
-                description="When it comes to safeguarding your property from water damage, trust Fox Exterior Solutions as your go-to gutter contractor. We pride ourselves on being more than just roofing experts; we're your dedicated partner for all your gutter needs. Our highly skilled team is fully committed to delivering top-quality gutter installation and replacement services." 
-                text1="Installing gutters for effective protection against water damage"
-                text2="Replacing worn gutters for a more efficient drainage system"
+                description="When it comes to protecting your property from water damage, trust Fox Exterior Solutions as your go-to gutter contractor. We pride ourselves on being more than just roofing experts; We are your dedicated partner for all your gutter needs. Our highly qualified team is fully committed to providing high-quality gutter installation and replacement services." 
+                text1="We install gutters for effective protection against water damage."
+                text2="We replace worn gutters with a more efficient drainage system."
                 />
         </Layout>
     )

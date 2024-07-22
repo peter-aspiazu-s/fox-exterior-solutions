@@ -62,7 +62,7 @@ export const Layout: FC<LayoutProps> = ({
 
             <Sidebar toggleMenu={toggleMenu} menuOpen={menuOpen} />
 
-            {(lastElement !== "contact") && <BannerComponent 
+            {(lastElement === "contact" || lastElement === "about") ? <></> : <BannerComponent 
                 image={
                     (lastElement === "siding-windows") ? "url(/images/siding.webp)" 
                     : (lastElement === "vinyl-siding") ? "url(/images/siding.webp)"
@@ -95,8 +95,9 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "aluminium-gutters") ? "Aluminium Gutters"
                     : (lastElement === "maintenance") ? "Maintenance & Inspection"
                     : (lastElement === "contact") ? "Contact"
+                    : (lastElement === "about") ? "About"
                     // : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
-                    : "AQUÍ VA EL SLOGAN"
+                    : "Experience and professionalism in each roofing project."
                 } 
                 
                 onButtonClick={scrollToSection} // Pasar la función al BannerComponent
@@ -110,10 +111,8 @@ export const Layout: FC<LayoutProps> = ({
             
 
             {
-                (lastElement !== "contact")
-                && <div ref={sectionServicesRef}>
-                <SectionServices />
-            </div>
+                (lastElement === "contact" || lastElement === "about") ? <></>
+                : <div ref={sectionServicesRef}><SectionServices /></div>
             }
 
             {
@@ -129,7 +128,9 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "gutters") ? <></>
                 : (lastElement === "gutters-repairs") ? <></>
                 : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
+                : (lastElement === "about") ? <></>
                 :<WhyChooseUs />
             }  
 
@@ -146,7 +147,9 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "gutters") ? <></>
                 : (lastElement === "gutters-repairs") ? <></>
                 : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
+                : (lastElement === "about") ? <></>
                 :<ProjectsComponent />
             }            
 
@@ -163,7 +166,9 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "gutters") ? <></>
                 : (lastElement === "gutters-repairs") ? <></>
                 : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
+                : (lastElement === "about") ? <></>
                 :<BrandsComponent />
             }
 
@@ -180,12 +185,14 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "gutters") ? <></>
                 : (lastElement === "gutters-repairs") ? <></>
                 : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
+                : (lastElement === "about") ? <></>
                 :<OurProcess />
             }
 
             {
-                (lastElement === "contact") 
+                (lastElement === "contact" || lastElement === "about") 
                 ? <></> 
                 :<CallToActionFooter />
             }

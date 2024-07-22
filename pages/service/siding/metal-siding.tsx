@@ -17,10 +17,9 @@ function MetalSidingPage () {
         >
             <InfoServices images={imageArr}
                 title="Metal Siding"
-                // description="Sleek and modern, metal siding is known for its durability and resistance to fire and pests, making it an excellent choice for commercial properties."
                 description="Sleek and modern, metal siding is known for its durability and resistance to fire and pests, making it a great choice for commercial properties."
-                text1="Instalación de revestimiento metálico que combina estilo contemporáneo y resistencia excepcional"
-                text2="Soluciones de revestimiento duradero y resistente al fuego para propiedades comerciales"
+                text1="We install metal siding that combines contemporary style and exceptional resistance."
+                text2="Durable, fire-resistant cladding solutions for commercial properties."
             />
         </Layout>
     )

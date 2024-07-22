@@ -27,5 +27,6 @@ export const headerComponentData = [
         ]
     },
     {name: "Maintenance", redirect: "/service/maintenance"},
+    {name: "About", redirect: "/about"},
     {name: "Contact", redirect: "/contact"},
 ]

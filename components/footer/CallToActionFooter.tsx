@@ -8,8 +8,8 @@ export const CallToActionFooter: FC = () => {
         <div className="calltoactionfooter">
             <div className="calltoactionfooter__backgroundblack"></div>
             <div className="calltoactionfooter__container">
-                <div className="calltoactionfooter__title">Get in Touch with us!</div>
-                <div className="calltoactionfooter__text">Our experienced professionals are happy to meet with you at your convenience to provide you with a free, no-obligation quote and answer any questions you may have about roof repair or installation</div>
+                <div className="calltoactionfooter__title">Get in contact with us!</div>
+                <div className="calltoactionfooter__text">Our experts are available to meet with you and offer you a free, no-obligation quote. We&apos;re here to answer any questions you may have about roof repair or installation.</div>
                 {/* <Link href="/contact" className="sidebar__getaquote">
                     GET A QUOTE <span>&gt;</span>
                 </Link> */}

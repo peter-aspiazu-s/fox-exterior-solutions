@@ -39,6 +39,9 @@
 @import url(components/formcomponent.css);
 @import url(components/mapcomponents.css);
 
+/* ABOUT */
+@import url(components/aboutcomponent.css);
+
 
 /* SERVICES */
 @import url(components/swiper.css);

@@ -18,10 +18,9 @@ function HardieBoardSidingPage () {
         >
             <InfoServices images={imageArr} 
                 title="Hardie Board Siding"
-                // description="Durable and resistant to rot and pests, Hardie plank siding offers the appearance of wood without all the maintenance, making it a popular choice for a timeless look."
-                description="Durable and resistant to rot and pests, Hardie plank siding offers the appearance of wood without all the maintenance, making it a popular choice for a timeless look."
-                text1="Hardie Board siding installation that combines durability and wood aesthetics."
-                text2="Soluciones de revestimiento resistentes a plagas y putrefacción para una belleza duradera"
+                description="Durable and resistant to rot and pests, Hardie plank siding offers the look of wood without all the maintenance, making it a popular choice for a timeless look."
+                text1="We install Hardie Board siding that combines durability and wood aesthetics."
+                text2="Pest and rot resistant siding solutions for long-lasting beauty."
             />
         </Layout>
     )

@@ -1,0 +1,22 @@
+.aboutcomponent__title{
+    font-size: 30px;
+    color: #eeeeee;
+    font-weight: 600;
+}
+
+.aboutcomponent__description{
+    font-size: 18px;
+    color: #eeeeee;
+    text-align: justify;
+}
+
+
+@media screen and (min-width: 768px){
+    .aboutcomponent__title{
+        font-size: 40px;
+    }
+    
+    .aboutcomponent__description{
+        font-size: 20px;
+    }
+}

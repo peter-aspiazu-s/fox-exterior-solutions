@@ -17,10 +17,9 @@ function VinylSidingPage () {
         >
             <InfoServices images={imageArr}
                 title="Vinyl Siding"
-                // description="Versatile and low-maintenance, vinyl siding comes in various colors and styles, providing excellent protection against the elements and lasting beauty."
                 description="Versatile and low-maintenance, vinyl siding is available in various colors and styles, providing excellent protection from the elements and long-lasting beauty."
-                text1="Vinyl siding installation that combines resistance and varied aesthetics"
-                text2="Low-maintenance coating solutions for long-lasting, attractive protection"
+                text1="We install vinyl siding that combines resistance and varied aesthetics."
+                text2="Low-maintenance coating solutions for attractive, long-lasting protection."
             />
         </Layout>
     )

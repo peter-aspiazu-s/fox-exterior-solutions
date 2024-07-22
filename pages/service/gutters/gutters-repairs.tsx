@@ -18,10 +18,9 @@ function GuttersRepairsPage () {
         >
             <InfoServices images={imageArr}
                 title="Gutters Repairs" 
-                // description="Gutters plays the most important role in channeling rainwater away from your property's foundation and roof.  Whether you need to replace old, inefficient gutters or want a repair contact us." 
-                description="Gutters play a crucial role in diverting rainwater away from the foundation and roof of your property. Whether you need to replace old, inefficient gutters or perform a repair, contact us."  
-                text1="Replacing outdated gutters for effective rainwater management"
-                text2="Gutter repair services to maintain the structural integrity of your property"    
+                description="Gutters play a crucial role in diverting rainwater away from the foundation and roof of your property. If you need to replace old, inefficient gutters or carry out a repair, contact us."  
+                text1="Replacing outdated gutters for effective rainwater management."
+                text2="Gutter repair services to maintain the structural integrity of your property."    
             />
         </Layout>
     )

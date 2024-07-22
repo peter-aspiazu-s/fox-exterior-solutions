@@ -26,8 +26,8 @@ function MetalRoofsPage () {
                 title="Metal Roofs"
                 // description="Metal roofs are known for their durability, with a potential lifespan of 50 years or more. They are resistant to extreme weather conditions and can even enhance energy efficiency by reflecting solar radiant heat. Available in sheets or tiles, metal roofing offers a sleek, modern look to any property"
                 description="Metal roofs stand out for their exceptional durability, with a useful life that can exceed 50 years. They are resistant to extreme weather conditions and can improve energy efficiency by reflecting radiant solar heat. Available in sheets or tiles, metal roofs add a sleek, contemporary look to any property."
-                text1="Installation of metal roofs that resist extreme weather and increase energy efficiency"
-                text2="Replacing Roofs with Modern, Long-Lasting Metal Options"
+                text1="Installation of metal roofs that resist extreme weather conditions and increase energy efficiency."
+                text2="Replacing roofs with modern and durable metal options."
             />
         </Layout>
     )

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { FormComponent } from "./FormComponent";
-import { MapComponent } from "./MapComponent";
 
 export const ContactComponent: FC = () => {
     return (

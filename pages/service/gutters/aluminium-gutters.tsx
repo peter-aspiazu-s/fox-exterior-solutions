@@ -19,8 +19,8 @@ function AluminiumGuttersPage () {
                 title="Aluminium Gutters" 
                 // description="Lightweight and rust-resistant, aluminum gutters are popular due to their durability and low maintenance." 
                 description="Lightweight and rust-resistant, aluminum gutters are popular for their durability and low maintenance." 
-                text1="Installation of aluminum gutters that combine resistance and ease of maintenance"
-                text2="Durable, lightweight gutter solutions for reliable protection"
+                text1="Installation of aluminum gutters that combine resistance and ease of maintenance."
+                text2="Durable, lightweight gutter solutions for reliable protection."
             />
         </Layout>
     )
