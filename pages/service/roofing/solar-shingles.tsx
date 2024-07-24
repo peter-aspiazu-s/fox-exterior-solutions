@@ -25,9 +25,8 @@ function SolarShinglesPage () {
         >
             <InfoServices images={imageArr}
                 title="Solar Shingles."
-                // description="Solar shingles, are an alternative to traditional solar panels that look less noticeable and provide more curb appeal. They’re durable, weather-resistant and offer the same energy savings as many of the best solar panels.
-                //         The panels are much smaller than conventional solar panels, but they operate in a similar way, with building-integrated photovoltaic systems, an inverter and a circuit that allows the solar energy to be absorbed and flow through the wires into your home."
-                description="Solar shingles are an alternative to traditional solar panels that are less visible and improve curb appeal. They are durable, weather resistant, and offer the same energy savings as many of the best solar panels. Although they are smaller than conventional solar panels, they work in a similar way, with photovoltaic systems integrated into the building, an inverter and a circuit that allows solar energy to be absorbed and flow through cables to your home."
+                description="Solar  shingles are an alternative to traditional solar panels that are less visible and improve curb appeal. They are durable, weather resistant, and offer the same energy savings as many of the best solar panels. Although they are smaller than conventional solar panels, they work in a similar way, with photovoltaic systems integrated into the building, an inverter and a circuit that allows solar energy to be absorbed and flow through cables to your home.
+With years of experience and honest work, Fox Exterior Solutions is one of the certified companies in westerns New York. For the installation of new Timberline Solar by GAF products, we have professional installers."
                 text1="We install solar roof tiles that combine energy efficiency and aesthetic improvement."
                 text2="Integrated solar energy solutions for efficient energy absorption and distribution."
             />
