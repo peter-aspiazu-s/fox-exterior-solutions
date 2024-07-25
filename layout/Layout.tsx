@@ -97,7 +97,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "contact") ? "Contact"
                     : (lastElement === "about") ? "About"
                     // : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
-                    : "Experience and professionalism in each roofing project."
+                    : "Experience and professionalism in each roofing project"
                 } 
                 
                 onButtonClick={scrollToSection} // Pasar la función al BannerComponent
