@@ -53,7 +53,8 @@ export const Layout: FC<LayoutProps> = ({
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="keywords" content={keywords} />
-                <link rel="shortcut icon" href="/images/logo.svg" />
+                {/* <link rel="shortcut icon" href="/images/logo.svg" /> */}
+                <link rel="shortcut icon" href="/images/logo2.svg" />
             </Head>
             
             <InfoContactTop />
