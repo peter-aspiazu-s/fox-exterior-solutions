@@ -5,10 +5,21 @@
 }
 
 .formcomponent__title{
-   font-size: 30px;
-   font-weight: bold;
-   color: #eeeeee;
-   text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #eeeeee;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.formcomponent__logo{
+    position: absolute;
+    top: -10px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
 }
 
 .formcomponent__text{
@@ -97,9 +108,23 @@
     transition: all .3s;
 }
 
+@media screen and (min-width: 375px){
+    .formcomponent__logo{
+        right: 25px;
+        width: 55px;
+        height: 55px;
+    }
+}
+
 @media screen and (min-width: 768px){
     .formcomponent{
         width: 600px;
+    }
+
+    .formcomponent__logo{
+        right: 140px;
+        width: 60px;
+        height: 60px;
     }
 
     .formcomponent__form{
@@ -139,6 +164,13 @@
         width: 800px;
     }
 
+    .formcomponent__logo{
+        top: -20px;
+        right: 140px;
+        width: 100px;
+        height: 100px;
+    }
+
     .formcomponent__address-group input{
         width: 250px;
     }
@@ -151,6 +183,13 @@
 @media screen and (min-width: 1440px){
     .formcomponent{
         width: 920px;
+    }
+
+    .formcomponent__logo{
+        top: -30px;
+        right: 200px;
+        width: 110px;
+        height: 110px;
     }
 
     .formcomponent__address-group input{
