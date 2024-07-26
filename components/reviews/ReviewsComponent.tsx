@@ -11,6 +11,18 @@ import Image from "next/image";
 const reviews = [
     {
         start: "⭐⭐⭐⭐⭐",
+        content: "If you need siding work done, look no further, this is the only company you should reach out to. I needed siding repair done, a project I had been holding off on for a couple years. This company did a great job in all aspects, whether its cost, timeliness, responsiveness, or quality of work. I had almost given up at one point during my research phase because the quotes I was receiving from other companies were super expensive or they kept trying to upsell. Alexis, the gentleman I worked with, didn’t waste my time trying to convince me to do a complete overhaul or trying to sell me more than I need. If I have any future siding work done, this is the only company I’m reaching out to. They’re honest, prompt, and provide phenomenal value.",
+        person: "Justin Lee.",
+        image: "/images/justin-lee.png"
+    },
+    {
+        start: "⭐⭐⭐⭐⭐",
+        content: "We hired this company to install drywall downstairs. There were some glitches but Alexis took care of them right away. My whole downstairs was done within 10 days wall boarding my ceilings and all the walls the plaster and taping and sanding. We are ready to paint. The also took all the debris from the project. Thank you.",
+        person: "Carolyn Boczarski.",
+        image: "/images/carolyn-boczarski.png"
+    },
+    {
+        start: "⭐⭐⭐⭐⭐",
         content: "Sean came to my home a few days after I contacted the company.  I got a fair estimate within a few days and in another week he removed my old broken storm door and installed a new door.  He was courteous and professional.  Stephanie Fox was my phone contact for the company and she was helpful and friendly.  I wish all of my contractor experiences were this good.",
         person: "Mitchell B.",
     },
@@ -38,7 +50,7 @@ const reviews = [
         start: "⭐⭐⭐⭐⭐",
         content: "Sean came to my home a few days after I contacted the company.  I got a fair estimate within a few days and in another week he removed my old broken storm door and installed a new door.  He was courteous and professional.  Stephanie Fox was my phone contact for the company and she was helpful and friendly.  I wish all of my contractor experiences were this good.",
         person: "Mitchell B.",
-    },
+    }
 ]
 
 export const ReviewsComponent: FC = () => {
@@ -49,12 +61,13 @@ export const ReviewsComponent: FC = () => {
                 <Swiper 
                     autoplay={true}
                     navigation={true}
+                    loop={true}
                     modules={[Autoplay, Navigation]} 
                     className="mySwiper reviewscomponent__swiper"
 
                 >
                     {
-                        reviews.map(({start, content, person}) => (
+                        reviews.map(({start, content, person, image}) => (
                             <SwiperSlide key={content} className="reviewscomponent__swiper-slide">
                                 <div className="reviewscomponent__slide-image">
                                     <Image src="/images/comillas.svg" alt="double quotation marks image" layout="fill" />
@@ -62,7 +75,14 @@ export const ReviewsComponent: FC = () => {
                                 <div className="reviewscomponent__slide-review">
                                     <div>{start}</div>
                                     <div>{`"${content}"`}</div>
-                                    <div>{person}</div>
+                                    <div className="reviewscomponent__slide-review-person">
+                                        {image &&
+                                            <div className="reviewscomponent__slide-review-image">
+                                                <Image src={image} alt="Image person" layout="fill" />
+                                            </div>
+                                        }
+                                        <div className="reviewscomponent__slide-review-text">{person}</div>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                         ))
