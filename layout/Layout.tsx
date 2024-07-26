@@ -14,6 +14,7 @@ import { BrandsComponent } from "@/components/brands/BrandsComponent";
 import { WhyChooseUs } from "@/components/whychooseus/WhyChooseUs";
 import { ProjectsComponent } from "@/components/projectscomponent/ProjectsComponent";
 import { OurProcess } from "@/components/ourprocess/OurProcess";
+import { ReviewsComponent } from "@/components/reviews/ReviewsComponent";
 
 
 interface LayoutProps {
@@ -190,6 +191,25 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "contact") ? <></>
                 : (lastElement === "about") ? <></>
                 :<OurProcess />
+            }
+
+            {
+                (lastElement === "siding-windows") ? <></> 
+                : (lastElement === "vinyl-siding") ? <></>
+                : (lastElement === "metal-siding") ? <></>
+                : (lastElement === "hardie-board-siding") ? <></>
+                : (lastElement === "roofing") ? <></>
+                : (lastElement === "metal-roofs") ? <></>
+                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "solar-shingles") ? <></>
+                : (lastElement === "flat-low-slope-roof-styles") ? <></>
+                : (lastElement === "gutters") ? <></>
+                : (lastElement === "gutters-repairs") ? <></>
+                : (lastElement === "aluminium-gutters") ? <></>
+                : (lastElement === "maintenance") ? <></>
+                : (lastElement === "contact") ? <></>
+                : (lastElement === "about") ? <></>
+                :<ReviewsComponent />
             }
 
             {

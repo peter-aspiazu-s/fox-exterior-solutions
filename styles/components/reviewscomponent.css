@@ -1,0 +1,119 @@
+.reviewscomponent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+.reviewscomponent__container{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 50px;
+}
+
+.reviewscomponent__title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.reviewscomponent__swiper{
+    background-color: #eeeeee !important;
+    width: 100%;
+    border: 2px solid #1c98d4;
+    box-shadow: 0px 0px 7px 3px #1c98d4 !important;
+}
+
+.reviewscomponent__swiper-slide{
+    background-color: #eeeeee !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+.reviewscomponent__slide-image{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.reviewscomponent__slide-review div:nth-child(2){
+    color: #565454;
+    margin-bottom: 20px;
+}
+
+.reviewscomponent__slide-review div:nth-child(3){
+    color: #333333;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 375px){
+    .reviewscomponent__container{
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .reviewscomponent__container{
+        width: 380px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .reviewscomponent__container{
+        width: 690px;
+    }
+
+    .reviewscomponent__slide-review{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .reviewscomponent__slide-review div{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .reviewscomponent__container{
+        width: 700px;
+    }
+
+    .reviewscomponent__title{
+        font-size: 40px;
+    }
+
+    .reviewscomponent__swiper{
+        display: flex !important;
+        justufy-content: center !important;
+        align-items: center !important;
+        height: 600px !important;
+    }
+    
+    .reviewscomponent__swiper-slide{
+        background-color: #eeeeee !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 60px !important;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .reviewscomponent__slide-review{
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .reviewscomponent__slide-review div{
+        text-align: left;
+    }
+}
