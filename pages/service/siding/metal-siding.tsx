@@ -3,8 +3,8 @@ import { Layout } from "@/layout/Layout";
 
 
 const imageArr = [
-    {image: "/images/siding2.jpg", alt:"Siding Image"},
-    {image: "/images/windows.jpg", alt:"Windows Image"},
+    {image: "/images/metal-siding.webp", alt:"Metal Siding Image"},
+    {image: "/images/metal-siding2.webp", alt:"Metal Siding Image"},
 ]
 
 function MetalSidingPage () {

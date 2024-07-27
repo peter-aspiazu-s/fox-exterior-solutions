@@ -3,8 +3,9 @@ import { Layout } from "@/layout/Layout";
 
 
 const imageArr = [
-    {image: "/images/trim-gutters.webp", alt:"Gutters Image"},
     {image: "/images/gutters.webp", alt:"Gutters Image"},
+    {image: "/images/gutters2.webp", alt:"Gutters Image"},
+    {image: "/images/gutters3.webp", alt:"Gutters Image"},
 ]
 
 function TrimGuttersPage () {

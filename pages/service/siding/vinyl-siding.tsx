@@ -3,8 +3,8 @@ import { Layout } from "@/layout/Layout";
 
 
 const imageArr = [
-    {image: "/images/siding2.jpg", alt:"Siding Image"},
-    {image: "/images/windows.jpg", alt:"Windows Image"},
+    {image: "/images/vinyl-siding.webp", alt:"Vinyl Siding Image"},
+    {image: "/images/vinyl-siding2.webp", alt:"Vinyl Siding Image"}
 ]
 
 function VinylSidingPage () {

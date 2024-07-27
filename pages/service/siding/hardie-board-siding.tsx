@@ -4,8 +4,8 @@ import { Layout } from "@/layout/Layout";
 
 
 const imageArr = [
-    {image: "/images/siding2.jpg", alt:"Siding Image"},
-    {image: "/images/windows.jpg", alt:"Windows Image"},
+    {image: "/images/hardie-board-siding.webp", alt:"Hardie Board Siding Image"},
+    {image: "/images/hardie-board-siding2.webp", alt:"Hardie Board Siding Image"}
 ]
 
 function HardieBoardSidingPage () {

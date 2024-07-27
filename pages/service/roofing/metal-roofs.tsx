@@ -3,15 +3,9 @@ import { Layout } from "@/layout/Layout";
 
 
 const imageArr = [
-    {image: "/images/roofing1.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing2.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing3.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing4.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing5.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing6.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing7.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing8.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing9.jpg", alt:"Roofing Image"},
+    {image: "/images/metal-roofs.webp", alt:"Metal Roofing Image"},
+    {image: "/images/metal-roofs2.webp", alt:"Metal Roofing Image"},
+    {image: "/images/metal-roofs3.webp", alt:"Metal Roofing Image"}
 ]
 
 function MetalRoofsPage () {
