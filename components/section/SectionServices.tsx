@@ -17,7 +17,7 @@ export const SectionServices:FC = () => {
                     <div className="sectionservices__list">
                         <Link href="/service/roofing" className="sectionservices__link">Roofing <RightIcon /></Link>
                         <Link href="/service/roofing/metal-roofs" className="sectionservices__link">Metal Roofs <RightIcon /></Link>
-                        <Link href="/service/roofing/asphalt-singles" className="sectionservices__link">Asphalt Singles <RightIcon /></Link>
+                        <Link href="/service/roofing/asphalt-shingles" className="sectionservices__link">Asphalt Shingles <RightIcon /></Link>
                         <Link href="/service/roofing/solar-shingles" className="sectionservices__link">Solar Shingles <RightIcon /></Link>
                         <Link href="/service/maintenance" className="sectionservices__link">Maintenance & Inspection <RightIcon /></Link>
                         

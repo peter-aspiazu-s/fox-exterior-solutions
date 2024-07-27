@@ -26,7 +26,7 @@ function MaintenancePage () {
             <InfoServices 
                 images={imageArr}
                 title="Maintenance & Inspection Services"
-                description="Fox Exterior. helps you to save money by extending the life of your existing roof through proper maintenance and by inspecting potential issues prior to the issues causing major damages. Who would need an inspection? A person that wants to extend the life of their existing roof and does not necessarily need a new roof. Roofs that are in the 5 – 20 year range are prime candidates.  A person buying a new home may be interested in this inspection to validate the condition of the roof."
+                description="Fox Exterior. helps you to save money by extending the life of your existing roof through proper maintenance and by inspecting potential issues prior to the issues causing major damages. Who would need an inspection? A person that wants to extend the life of their existing roof and does not necessarily need a new roof. Roofs that are in the 5- 20-year range are prime candidates. A person buying a new home may be interested in this inspection to validate the condition of the roof."
                 text1="Storm inspections – see if your existing roof has experienced damage from hail storms or hurricane winds."
                 text2="Roof replacement inspections – see if you need a full roof replacement due to age or other conditions."
             />

@@ -72,7 +72,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "hardie-board-siding") ? "url(/images/siding.webp)"
                     : (lastElement === "roofing") ? "url(/images/roofing.webp)"
                     : (lastElement === "metal-roofs") ? "url(/images/roofing2.jpg)"
-                    : (lastElement === "asphalt-singles") ? "url(/images/roofing3.jpg)"
+                    : (lastElement === "asphalt-shingles") ? "url(/images/roofing3.jpg)"
                     : (lastElement === "solar-shingles") ? "url(/images/roofing4.jpg)"
                     : (lastElement === "flat-low-slope-roof-styles") ? "url(/images/roofing5.jpg)"
                     : (lastElement === "gutters") ? "url(/images/trim-gutters.webp)"
@@ -89,7 +89,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "hardie-board-siding") ? "Hardie Board Siding"
                     : (lastElement === "roofing") ? "Roofing Services"
                     : (lastElement === "metal-roofs") ? "Metal Roofs"
-                    : (lastElement === "asphalt-singles") ? "Asphalt Singles"
+                    : (lastElement === "asphalt-shingles") ? "Asphalt Shingles"
                     : (lastElement === "solar-shingles") ? "Solar Shingles"
                     : (lastElement === "flat-low-slope-roof-styles") ? "Flat Low Slope Roof Styles"
                     : (lastElement === "gutters") ? "Gutters Services"
@@ -124,7 +124,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "hardie-board-siding") ? <></>
                 : (lastElement === "roofing") ? <></>
                 : (lastElement === "metal-roofs") ? <></>
-                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "asphalt-shingles") ? <></>
                 : (lastElement === "solar-shingles") ? <></>
                 : (lastElement === "flat-low-slope-roof-styles") ? <></>
                 : (lastElement === "gutters") ? <></>
@@ -143,7 +143,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "hardie-board-siding") ? <></>
                 : (lastElement === "roofing") ? <></>
                 : (lastElement === "metal-roofs") ? <></>
-                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "asphalt-shingles") ? <></>
                 : (lastElement === "solar-shingles") ? <></>
                 : (lastElement === "flat-low-slope-roof-styles") ? <></>
                 : (lastElement === "gutters") ? <></>
@@ -162,7 +162,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "hardie-board-siding") ? <></>
                 : (lastElement === "roofing") ? <></>
                 : (lastElement === "metal-roofs") ? <></>
-                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "asphalt-shingles") ? <></>
                 : (lastElement === "solar-shingles") ? <></>
                 : (lastElement === "flat-low-slope-roof-styles") ? <></>
                 : (lastElement === "gutters") ? <></>
@@ -181,7 +181,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "hardie-board-siding") ? <></>
                 : (lastElement === "roofing") ? <></>
                 : (lastElement === "metal-roofs") ? <></>
-                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "asphalt-shingles") ? <></>
                 : (lastElement === "solar-shingles") ? <></>
                 : (lastElement === "flat-low-slope-roof-styles") ? <></>
                 : (lastElement === "gutters") ? <></>
@@ -200,7 +200,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "hardie-board-siding") ? <></>
                 : (lastElement === "roofing") ? <></>
                 : (lastElement === "metal-roofs") ? <></>
-                : (lastElement === "asphalt-singles") ? <></>
+                : (lastElement === "asphalt-shingles") ? <></>
                 : (lastElement === "solar-shingles") ? <></>
                 : (lastElement === "flat-low-slope-roof-styles") ? <></>
                 : (lastElement === "gutters") ? <></>

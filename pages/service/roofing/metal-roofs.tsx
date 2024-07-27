@@ -24,7 +24,7 @@ function MetalRoofsPage () {
         >
             <InfoServices images={imageArr}
                 title="Metal Roofs"
-                description="Metal roofs stand out for their exceptional durability, with a useful life that can exceed 60 years.en fox … tenemos un equipo de profesionales en la instalacion de roof metal standing seam, uno de nuestro mejores productos en el roof de metal que proporciona larga durabilidad, muchos estilos de colores y tu casa se elevará en el mercado. They are resistant to extreme weather conditions and can improve energy efficiency by reflecting radiant solar heat. Available in sheets or tiles, metal roofs add a sleek, contemporary look to any property."
+                description="Metal roofs stand out for their exceptional durability, with a useful life that can exceed 60 years. In Fox Exterior Solutins, we have a team of professionals in the installation of roof metal standing seam, one of our best products in the metal roof that provides long durability, many styles of colors and your house will rise in the market. They are resistant to extreme weather conditions and can improve energy efficiency by reflecting radiant solar heat. Available in sheets or tiles, metal roofs add a sleek, contemporary look to any property."
                 text1="Installation of metal roofs that resist extreme weather conditions and increase energy efficiency."
                 text2="Replacing roofs with modern and durable metal options."
             />

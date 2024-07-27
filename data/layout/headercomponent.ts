@@ -4,7 +4,7 @@ export const headerComponentData = [
         redirect: "/service/roofing",
         subService: [
             {category: "Residential", name: "Metal Roofs", redirect: "/service/roofing/metal-roofs"},
-            {category: "Residential", name: "Asphalt Singles", redirect: "/service/roofing/asphalt-singles"},
+            {category: "Residential", name: "Asphalt Shingles", redirect: "/service/roofing/asphalt-shingles"},
             {category: "Residential", name: "Solar Shingles", redirect: "/service/roofing/solar-shingles"},
             {category: "Residential", name: "Flat/Low Slope Roof Styles", redirect: "/service/roofing/flat-low-slope-roof-styles"}
         ]
