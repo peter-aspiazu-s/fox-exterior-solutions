@@ -10,7 +10,7 @@ function DoneWorksPage () {
         >
             <div className="completedworks">
                 <div className="completedworks__container">
-                    <div className="completedworks__title">Done WORKS</div>
+                    <div className="completedworks__title">Done Works</div>
                     <div className="completedworks__container-videos">
                         <video className="completedworks__video" src="/images/trabajos.mp4" controls></video>
                         <video className="completedworks__video" src="/images/trabajos2.mp4" controls></video>
