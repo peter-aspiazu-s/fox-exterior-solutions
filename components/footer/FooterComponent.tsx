@@ -29,9 +29,6 @@ export const FooterComponent: FC = () => {
 
                 <div className="footercomponent__section">
                     <div className="footercomponent__title">Commercial Services</div>
-                    {/* <Link 
-                        href="/service/roofing" 
-                        className="footercomponent__link">Flat Root</Link> */}
                     <Link href="/service/roofing/flat-low-slope-roof-styles" className="footercomponent__link">Flat/Low Slope Roof Styles</Link>
                     <Link href="/service/siding-windows" className="footercomponent__link">Siding & Windows</Link>
                     <Link href="/service/siding/vinyl-siding" className="footercomponent__link">Vinyl Siding</Link>
@@ -75,26 +72,7 @@ export const FooterComponent: FC = () => {
                                 fill="#333333"/>
                         </svg>
                     </a>
-                    {/* <a href="#" className="footercomponent__icon-socialnetwork">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            style={{
-                                background: "radial-gradient(circle, #333333 20%, #eeeeee 80%)",
-                                borderRadius: "30px",
-                            }}
-                        >
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM36.265 18.0732C35.9706 16.9422 35.1031 16.0516 34.0016 15.7493C32.0054 15.2 24 15.2 24 15.2C24 15.2 15.9946 15.2 13.9983 15.7493C12.8967 16.0516 12.0292 16.9422 11.7348 18.0732C11.2 20.123 11.2 24.4 11.2 24.4C11.2 24.4 11.2 28.6768 11.7348 30.7268C12.0292 31.8578 12.8967 32.7484 13.9983 33.0508C15.9946 33.6 24 33.6 24 33.6C24 33.6 32.0054 33.6 34.0016 33.0508C35.1031 32.7484 35.9706 31.8578 36.265 30.7268C36.8 28.6768 36.8 24.4 36.8 24.4C36.8 24.4 36.8 20.123 36.265 18.0732Z" 
-                                fill="#eeeeee"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 28.8V20.8L28 24.8001L21.6 28.8Z" 
-                                fill="#eeeeee"/>
-                        </svg>
-                    </a> */}
                 </div>
-
-                {/* <div className="footercomponent__section">
-                    <Link href="/contact" className="footercomponent__button">
-                        LEAVEA BUFFALO REVIEW <span>&gt;</span>
-                    </Link>
-                </div> */}
             </div>
         </div>
     )

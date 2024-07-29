@@ -1,7 +1,7 @@
 export const InfoContactTopData = [
     {
         name: "Buffalo", 
-        number:"7168286889", 
+        number:"17168286889", 
         numberVisible: "(716) 828-6889",
         locationLink: "https://maps.app.goo.gl/8FKfPgahiwQucrEm9",
         locationName: "31 Stillwell Ave Kenmore, NY 14217",
