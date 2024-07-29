@@ -39,7 +39,7 @@ export const OurProcess:FC = () => {
                 </div>
 
                 <div className="ourprocess__container-button">
-                    <a href="tel:+7168286889" className="ourprocess__button">CALL (716) 828-6889</a>
+                    <a href="tel:+17168286889" className="ourprocess__button">CALL (716) 828-6889</a>
                     <a href="https://wa.link/da3iiu" target="_blank" className="ourprocess__button">MESSAGE US</a>
                 </div>
             </div>

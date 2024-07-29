@@ -46,7 +46,7 @@ export const ProjectsComponent: FC = () => {
                 <div className="projectscomponent__box">
                     <div className="projectscomponent__box-title">Ready To Get Started?</div>
                     <div className="projectscomponent__box-description">We are just a phone call or message away. Get your free estimate today.</div>
-                    <a href="tel:+7168286889" className="projectscomponent__box-button">CALL (716) 828-6889</a>
+                    <a href="tel:+17168286889" className="projectscomponent__box-button">CALL (716) 828-6889</a>
                     <a href="https://wa.link/da3iiu" target="_blank" className="projectscomponent__box-link">Message Us</a>
                 </div>
             </div>
