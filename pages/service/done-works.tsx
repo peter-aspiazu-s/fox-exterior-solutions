@@ -1,16 +1,16 @@
 import { Layout } from "@/layout/Layout";
 
-function CompletedWorksPage () {
+function DoneWorksPage () {
 
     return(
         <Layout
-            title="Completed Works | Page"
-            description="Completed Works Services"
-            keywords="Fox Exterior Solutions, Completed Works"
+            title="Done Works | Page"
+            description="Done Works Services"
+            keywords="Fox Exterior Solutions, Done Works"
         >
             <div className="completedworks">
                 <div className="completedworks__container">
-                    <div className="completedworks__title">COMPLETED WORKS</div>
+                    <div className="completedworks__title">Done WORKS</div>
                     <div className="completedworks__container-videos">
                         <video className="completedworks__video" src="/images/trabajos.mp4" controls></video>
                         <video className="completedworks__video" src="/images/trabajos2.mp4" controls></video>
@@ -22,4 +22,4 @@ function CompletedWorksPage () {
     )
 }
 
-export default CompletedWorksPage;
+export default DoneWorksPage;
