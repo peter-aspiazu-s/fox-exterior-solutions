@@ -5,6 +5,7 @@ import { Layout } from "@/layout/Layout";
 const imageArr = [
     {image: "/images/siding2.jpg", alt:"Siding Image"},
     {image: "/images/windows.jpg", alt:"Windows Image"},
+    {image: "/images/siding3.jpg", alt:"Windows Image"}
 ]
 
 function SidingPage () {

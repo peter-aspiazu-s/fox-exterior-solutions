@@ -51,15 +51,6 @@ export const HeaderComponent: FC<headerComponentProps> = ({
                                 }
                             >{data.name.toLocaleUpperCase()}</Link>
 
-                            {/* {
-                                data.subService && <svg onClick={() => setSubmenu(!submenu)} 
-                                xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
-                                className={submenu ? "ico-rotate" : "ico-norotate"}
-                                >
-                                    <path d="M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" transform="translate(0 1)" />
-                                </svg>
-                            } */}
-
                             {data.subService && (
                                 <div className="headercomponent__submenu">
                                     {data.subService.map((submenu) => (

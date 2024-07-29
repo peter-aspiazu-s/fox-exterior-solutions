@@ -79,6 +79,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "gutters-repairs") ? "url(/images/gutters-repair.webp)"
                     : (lastElement === "aluminium-gutters") ? "url(/images/aluminium-gutters.webp)"
                     : (lastElement === "maintenance") ? "url(/images/maintenance.webp)"
+                    : (lastElement === "completed-works") ? "url(/images/hardie-board-siding3.jpg)"
                     : "url(/images/bannerhome.gif)"
                 } 
                 
@@ -98,6 +99,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "maintenance") ? "Maintenance & Inspection"
                     : (lastElement === "contact") ? "Contact"
                     : (lastElement === "about") ? "About"
+                    : (lastElement === "completed-works") ? "Completed Works"
                     // : "At Fox Exterior Solutions, we specialize in asphalt shingle roofing"
                     : "Experience and professionalism in each roofing project"
                 } 
@@ -133,6 +135,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
                 : (lastElement === "about") ? <></>
+                : (lastElement === "completed-works") ? <></>
                 :<WhyChooseUs />
             }  
 
@@ -152,6 +155,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
                 : (lastElement === "about") ? <></>
+                : (lastElement === "completed-works") ? <></>
                 :<ProjectsComponent />
             }            
 
@@ -171,6 +175,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
                 : (lastElement === "about") ? <></>
+                : (lastElement === "completed-works") ? <></>
                 :<BrandsComponent />
             }
 
@@ -190,6 +195,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "maintenance") ? <></>
                 : (lastElement === "contact") ? <></>
                 : (lastElement === "about") ? <></>
+                : (lastElement === "completed-works") ? <></>
                 :<OurProcess />
             }
 

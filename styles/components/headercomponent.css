@@ -133,6 +133,7 @@
 
     .headercomponent__menu{
         position: relative;
+        text-align: center;
     }
 
     .headercomponent__menu-items-link{
