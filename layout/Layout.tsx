@@ -74,7 +74,7 @@ export const Layout: FC<LayoutProps> = ({
                     : (lastElement === "metal-roofs") ? "url(/images/metal-roofs.webp)"
                     : (lastElement === "asphalt-shingles") ? "url(/images/asphalt-shingles.webp)"
                     : (lastElement === "solar-shingles") ? "url(/images/solar-shingles.webp)"
-                    : (lastElement === "flat-low-slope-roof-styles") ? "url(/images/flat-low-slope-roof-styles.webp)"
+                    : (lastElement === "flat-low-slope-roof-styles") ? "url(/images/flat-low-slope-roof-styles3.jpg)"
                     : (lastElement === "gutters") ? "url(/images/gutters2.webp)"
                     : (lastElement === "gutters-repairs") ? "url(/images/gutters-repair.webp)"
                     : (lastElement === "aluminium-gutters") ? "url(/images/aluminium-gutters.webp)"

@@ -4,7 +4,8 @@ import { Layout } from "@/layout/Layout";
 
 const imageArr = [
     {image: "/images/vinyl-siding.webp", alt:"Vinyl Siding Image"},
-    {image: "/images/vinyl-siding2.webp", alt:"Vinyl Siding Image"}
+    {image: "/images/vinyl-siding2.webp", alt:"Vinyl Siding Image"},
+    {image: "/images/hardie-board-siding3.jpg", alt:"Hardie Board Siding Image"}
 ]
 
 function VinylSidingPage () {

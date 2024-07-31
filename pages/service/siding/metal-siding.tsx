@@ -5,6 +5,7 @@ import { Layout } from "@/layout/Layout";
 const imageArr = [
     {image: "/images/metal-siding.webp", alt:"Metal Siding Image"},
     {image: "/images/metal-siding2.webp", alt:"Metal Siding Image"},
+    {image: "/images/hardie-board-siding5.jpg", alt:"Hardie Board Siding Image"}
 ]
 
 function MetalSidingPage () {
