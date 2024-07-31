@@ -159,7 +159,7 @@
     }
 
     .formcomponent__form textarea,
-    .formcomponent__button {
+    .formcomponent__button, .lds-ring {
         grid-column: span 2;
     }
 }

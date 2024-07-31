@@ -49,3 +49,6 @@
 
 /* COMPLETED WORKS */
 @import url(components/completedworks.css);
+
+/* Loading */
+@import url(components/loading.css);

@@ -56,7 +56,7 @@ export const FormComponent: FC<FormProps> = ({text}) => {
 
         if (isValid()) {
             try {
-                const response = await fetch('/api/sendEmails', {
+                const response = await fetch('/api/sendEmail', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -84,6 +84,18 @@ export const FormComponent: FC<FormProps> = ({text}) => {
                         message: '',
                     });
                 } else {
+                    setFormData({
+                        firstname: '',
+                        lastname: '',
+                        email: '',
+                        phone: '',
+                        address: '',
+                        city: '',
+                        zipcode: '',
+                        availableappointmenttime: '',
+                        services: '',
+                        message: '',
+                    });
                     throw new Error('Failed to send email');
                 }
             } catch (error) {
@@ -256,7 +268,7 @@ export const FormComponent: FC<FormProps> = ({text}) => {
                 {/* <label className={`formcomponent__label ${text ? "formcomponent__textclass" : ""}`} id="message">MESSAGE*</label> */}
                 <textarea 
                     className="formcomponent__textarea" 
-                    name="comment" 
+                    name="message" 
                     value={message}
                     onChange={handleChange}   
                     placeholder="How can we help you?" 
