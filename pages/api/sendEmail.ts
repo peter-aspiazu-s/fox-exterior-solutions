@@ -34,7 +34,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         try {
             // Configuración del transportador de Nodemailer
             const transporter = nodemailer.createTransport({
-                host: 'mail.rosari-construction.com',
+                host: 'mail.foxexteriorsolutionswny.com',
                 port: 465,
                 secure: true, // true para el puerto 465
                 auth: {
@@ -45,8 +45,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
             // Configuración del correo electrónico
             const mailOptions = {
-                from: 'rosariconstruction@rosari-construction.com',
-                to: 'stalin@rosari-construction.com, estefania@rosari-construction.com',
+                from: 'foxexteriorsolutionswny@foxexteriorsolutionswny.com',
+                to: 'alexism@foxexteriorsolutionswny.com, josep@foxexteriorsolutionswny.com, support@foxexteriorsolutionswny.com',
                 subject: 'New Contact Form Submission',
                 html: `<p><strong>First Name:</strong> ${firstname}</p>
                        <p><strong>Last Name:</strong> ${lastname}</p>
