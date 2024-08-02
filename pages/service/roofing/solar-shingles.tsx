@@ -5,7 +5,9 @@ import { Layout } from "@/layout/Layout";
 
 const imageArr = [
     {image: "/images/solar-shingles.webp", alt:"Solar Shingles Image"},
-    {image: "/images/solar-shingles2.webp", alt:"Solar Shingles Image"}
+    {image: "/images/solar-shingles3.jpg", alt:"Solar Shingles Image"},
+    {image: "/images/solar-shingles4.jpg", alt:"Solar Shingles Image"},
+    {image: "/images/solar-shingles5.jpg", alt:"Solar Shingles Image"},
 ]
 
 function SolarShinglesPage () {

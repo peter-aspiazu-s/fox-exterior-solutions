@@ -1,3 +1,4 @@
+import { SlideDoneWork } from "@/components/slidedonework/SlideDoneWork";
 import { Layout } from "@/layout/Layout";
 
 function DoneWorksPage () {
@@ -14,7 +15,9 @@ function DoneWorksPage () {
                     <div className="completedworks__container-videos">
                         {/* <video className="completedworks__video" src="/images/trabajos.mp4" controls></video> */}
                         <video className="completedworks__video" src="/images/trabajos2.mp4" controls></video>
-                        <video className="completedworks__video" src="/images/trabajos3.mp4" controls></video>
+                        <div className="completedworks__slide">
+                            <SlideDoneWork />
+                        </div>
                     </div>
                 </div>
             </div>
