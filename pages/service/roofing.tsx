@@ -4,15 +4,15 @@ import { TypesOfRoofing } from "@/components/typesofroofing/TypesOfRoofing";
 
 
 const imageArr = [
-    {image: "/images/roofing1.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing2.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing3.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing4.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing5.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing6.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing7.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing8.jpg", alt:"Roofing Image"},
-    {image: "/images/roofing9.jpg", alt:"Roofing Image"},
+    {image: "/images/roofing1.webp", alt:"Roofing Image"},
+    {image: "/images/roofing2.webp", alt:"Roofing Image"},
+    {image: "/images/roofing3.webp", alt:"Roofing Image"},
+    {image: "/images/roofing4.webp", alt:"Roofing Image"},
+    {image: "/images/roofing5.webp", alt:"Roofing Image"},
+    {image: "/images/roofing6.webp", alt:"Roofing Image"},
+    {image: "/images/roofing7.webp", alt:"Roofing Image"},
+    {image: "/images/roofing8.webp", alt:"Roofing Image"},
+    {image: "/images/roofing9.webp", alt:"Roofing Image"},
 ]
 
 function RoofingPage () {

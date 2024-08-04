@@ -3,9 +3,9 @@ import { Layout } from "@/layout/Layout";
 
 
 const imageArr = [
-    {image: "/images/flat-low-slope-roof-styles3.jpg", alt:"Flat/Low Slope Roof Styles Image"},
-    {image: "/images/flat-low-slope-roof-styles4.jpg", alt:"Flat/Low Slope Roof Styles Image"},
-    {image: "/images/flat-low-slope-roof-styles5.jpg", alt:"Flat/Low Slope Roof Styles Image"}
+    {image: "/images/flat-low-slope-roof-styles3.webp", alt:"Flat/Low Slope Roof Styles Image"},
+    {image: "/images/flat-low-slope-roof-styles4.webp", alt:"Flat/Low Slope Roof Styles Image"},
+    {image: "/images/flat-low-slope-roof-styles5.webp", alt:"Flat/Low Slope Roof Styles Image"}
 ]
 
 

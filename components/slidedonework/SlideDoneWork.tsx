@@ -13,99 +13,99 @@ import Image from 'next/image';
 
 const images = [
     {
-        image: "/images/workdone1.jpg",
+        image: "/images/workdone1.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone2.jpg",
+        image: "/images/workdone2.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone3.jpg",
+        image: "/images/workdone3.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone4.jpg",
+        image: "/images/workdone4.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone5.jpg",
+        image: "/images/workdone5.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone6.jpg",
+        image: "/images/workdone6.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone7.jpg",
+        image: "/images/workdone7.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone8.jpg",
+        image: "/images/workdone8.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone9.jpg",
+        image: "/images/workdone9.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone10.jpg",
+        image: "/images/workdone10.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone11.jpg",
+        image: "/images/workdone11.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone12.jpg",
+        image: "/images/workdone12.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone13.jpg",
+        image: "/images/workdone13.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone14.jpg",
+        image: "/images/workdone14.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone15.jpg",
+        image: "/images/workdone15.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone16.jpg",
+        image: "/images/workdone16.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone17.jpg",
+        image: "/images/workdone17.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone18.jpg",
+        image: "/images/workdone18.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone19.jpg",
+        image: "/images/workdone19.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone20.jpg",
+        image: "/images/workdone20.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone21.jpg",
+        image: "/images/workdone21.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone22.jpg",
+        image: "/images/workdone22.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone23.jpg",
+        image: "/images/workdone23.webp",
         alt: "Work Done"
     },
     {
-        image: "/images/workdone24.jpg",
+        image: "/images/workdone24.webp",
         alt: "Work Done"
     },
 ]
