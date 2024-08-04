@@ -35,7 +35,7 @@ export const SlideImage:FC<Props> = ({
             >
                 {
                     images.map(({image, alt}) => (
-                        <SwiperSlide key={image}><Image src={image} alt={alt} layout='fill' /></SwiperSlide>
+                        <SwiperSlide key={image}><img src={image} alt={alt} width="100%" height="100%" loading="lazy" /></SwiperSlide>
                     ))
                 }
             </Swiper>

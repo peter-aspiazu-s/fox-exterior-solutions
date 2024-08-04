@@ -178,7 +178,7 @@ export const FormComponent: FC<FormProps> = ({text}) => {
             <div className={`formcomponent__title ${text ? "formcomponent__textclass" : ""}`}>
                 Contact Form
                 <div className="formcomponent__logo">
-                    <Image src="/images/logo2.svg" alt="Logo Fix Exterior Solutions" layout="fill" />
+                    <img src="/images/logo2.svg" alt="Logo Fix Exterior Solutions" width="100%" height="100%" loading="lazy" />
                 </div>
             </div>
             <div className={`formcomponent__text ${text ? "formcomponent__textclass" : ""}`}>Send us some basic information about your project needs and an expert from our team will be in touch shortly.</div>

@@ -14,7 +14,8 @@ export const OurProcess:FC = () => {
                 <div className="ourprocess__container-card">
                     <div className="ourprocess__card">
                         <div className="ourprocess__card-image">
-                            <Image src="/images/men-cell.webp" alt="Image of Man on a phone call" layout="fill" />
+                            {/* <Image src="/images/men-cell.webp" alt="Image of Man on a phone call" layout="fill" /> */}
+                            <img src="/images/men-cell.webp" alt="Image of Man on a phone call" width="100%" height="100%" loading="lazy" />
                         </div>
                         <div className="ourprocess__card-title">Step 1</div>
                         <div className="ourprocess__card-subtitle">Call us or Send us a Message</div>
@@ -22,7 +23,8 @@ export const OurProcess:FC = () => {
                     </div>
                     <div className="ourprocess__card">
                         <div className="ourprocess__card-image">
-                            <Image src="/images/cafe-calendar.webp" alt="Coffee and calendar" layout="fill" />
+                            {/* <Image src="/images/cafe-calendar.webp" alt="Coffee and calendar" layout="fill" /> */}
+                            <img src="/images/cafe-calendar.webp" alt="Coffee and calendar" width="100%" height="100%" loading="lazy" />
                         </div>
                         <div className="ourprocess__card-title">Step 2</div>
                         <div className="ourprocess__card-subtitle">Schedule an Inspection</div>
@@ -30,7 +32,8 @@ export const OurProcess:FC = () => {
                     </div>
                     <div className="ourprocess__card">
                         <div className="ourprocess__card-image">
-                            <Image src="/images/roofing10.webp" alt="roofing image" layout="fill" />
+                            {/* <Image src="/images/roofing10.webp" alt="roofing image" layout="fill" /> */}
+                            <img src="/images/roofing10.webp" alt="roofing image" width="100%" height="100%" loading="lazy" />
                         </div>
                         <div className="ourprocess__card-title">Step 3</div>
                         <div className="ourprocess__card-subtitle">Get an Estimate</div>

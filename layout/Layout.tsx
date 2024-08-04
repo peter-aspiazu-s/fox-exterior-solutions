@@ -139,7 +139,7 @@ export const Layout: FC<LayoutProps> = ({
                 :<WhyChooseUs />
             }  
 
-            {/* {
+            {
                 (lastElement === "siding-windows") ? <></> 
                 : (lastElement === "vinyl-siding") ? <></>
                 : (lastElement === "metal-siding") ? <></>
@@ -157,7 +157,7 @@ export const Layout: FC<LayoutProps> = ({
                 : (lastElement === "about") ? <></>
                 : (lastElement === "done-works") ? <></>
                 :<ProjectsComponent />
-            }             */}
+            }            
 
             {
                 (lastElement === "siding-windows") ? <></> 

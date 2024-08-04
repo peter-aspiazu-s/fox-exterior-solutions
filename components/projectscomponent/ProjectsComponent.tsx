@@ -14,7 +14,7 @@ export const ProjectsComponent: FC = () => {
                 <div className="projectscomponent__projects">
                     <div className="projectscomponent__projects-card">
                         <div className="projectscomponent__projects-card-image">
-                            <Image src="/images/asphalt-shingles.webp" alt="Roofing image" layout="fill" />
+                            <img src="/images/asphalt-shingles.webp" alt="Roofing image" width="100%" height="100%" loading="lazy" />
                         </div>
                         <div className="projectscomponent__projects-card-container">
                             <div className="projectscomponent__projects-card-title">Composite Roofs</div>
@@ -24,7 +24,7 @@ export const ProjectsComponent: FC = () => {
                     </div>
                     <div className="projectscomponent__projects-card">
                         <div className="projectscomponent__projects-card-image">
-                            <Image src="/images/wood-roof.png" alt="Roofing image" layout="fill" />
+                            <img src="/images/wood-roof.png" alt="Roofing image" width="100%" height="100%" loading="lazy" />
                         </div>
                         <div className="projectscomponent__projects-card-container">
                             <div className="projectscomponent__projects-card-title">Wooden roofs</div>
@@ -34,7 +34,7 @@ export const ProjectsComponent: FC = () => {
                     </div>
                     <div className="projectscomponent__projects-card">
                         <div className="projectscomponent__projects-card-image">
-                            <Image src="/images/metal-roofs2.webp" alt="Roofing image" layout="fill" />
+                            <img src="/images/metal-roofs2.webp" alt="Roofing image" width="100%" height="100%" loading="lazy" />
                         </div>
                         <div className="projectscomponent__projects-card-container">
                             <div className="projectscomponent__projects-card-title">Metal Roofs</div>

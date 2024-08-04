@@ -52,16 +52,20 @@ export const WhyChooseUs: FC = () => {
                 </div>
                 <div className="whychooseus__container-images">
                     <div className="whychooseus__image">
-                        <Image src="/images/home1.webp" alt="Home image" layout="fill" />
+                        {/* <Image src="/images/home1.webp" alt="Home image" layout="fill" /> */}
+                        <img src="/images/home1.webp" alt="Home image" width="100%" height="100%" loading="lazy" />
                     </div>
                     <div className="whychooseus__image">
-                        <Image src="/images/home2.webp" alt="Home image" layout="fill" />
+                        {/* <Image src="/images/home2.webp" alt="Home image" layout="fill" /> */}
+                        <img src="/images/home2.webp" alt="Home image" width="100%" height="100%" loading="lazy" />
                     </div>
                     <div className="whychooseus__image">
-                        <Image src="/images/home3.webp" alt="Home image" layout="fill" />
+                        {/* <Image src="/images/home3.webp" alt="Home image" layout="fill" /> */}
+                        <img src="/images/home3.webp" alt="Home image" width="100%" height="100%" loading="lazy" />
                     </div>
                     <div className="whychooseus__image">
-                        <Image src="/images/home4.webp" alt="Home image" layout="fill" />
+                        {/* <Image src="/images/home4.webp" alt="Home image" layout="fill" /> */}
+                        <img src="/images/home4.webp" alt="Home image" width="100%" height="100%" loading="lazy" />
                     </div>
                 </div>
             </div>

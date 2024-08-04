@@ -78,7 +78,7 @@ export const ReviewsComponent: FC = () => {
                                     <div className="reviewscomponent__slide-review-person">
                                         {image &&
                                             <div className="reviewscomponent__slide-review-image">
-                                                <Image src={image} alt="Image person" layout="fill" />
+                                                <img src={image} alt="Image person" width="100%" height="100%" loading="lazy" />
                                             </div>
                                         }
                                         <div className="reviewscomponent__slide-review-text">{person}</div>

@@ -48,7 +48,7 @@ export const FooterComponent: FC = () => {
 
                 <div className="footercomponent__section">
                     <div className="footercomponent__logo">
-                        <Image src="/images/logo.svg" alt="Logo Fox Exterior Solutions" layout="fill" />
+                        <img src="/images/logo.svg" alt="Logo Fox Exterior Solutions" width="100%" height="100%" loading="lazy" />
                     </div>
                     <div className="footercomponent__paragraph">At Fox Exterior Solutions, we specialize in asphalt shingle roofing. As your trusted contractor, our experienced team is dedicated to delivering high-quality asphalt shingle roofing services backed by years of expertise in the industry.</div>
                 </div>

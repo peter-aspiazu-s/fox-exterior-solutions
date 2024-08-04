@@ -28,7 +28,7 @@ export const HeaderComponent: FC<headerComponentProps> = ({
                     className="headercomponent__logo"
                     onClick={() => setMenuOpen(false)}
                 >
-                    <Image src="/images/logo.svg" alt="Logo Fox Exterior Solutions" layout="fill" />
+                    <img src="/images/logo.svg" alt="Logo Fox Exterior Solutions" width="100%" height="100%" loading="lazy" />
                 </Link>
                 <div 
                     className={`headercomponent__ico-menu ${menuOpen ? 'open' : ''}`}
